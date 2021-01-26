@@ -1,0 +1,33 @@
+.slideshow {
+    position: absolute;
+}
+
+.slideshow-img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: opacity 0.85s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#1 {
+    background-image: url(http://res.cloudinary.com/daanr37/image/upload/v1610648280/Karlitos%20Way/IMG_0014_2_ayrgsj.jpg);
+}
+#2 {
+    background-image: url(http://res.cloudinary.com/daanr37/image/upload/v1610648338/Karlitos%20Way/IMG_5443_2_uwzhky.jpg);
+}
+#3 {
+    background-image: url(http://res.cloudinary.com/daanr37/image/upload/v1609255929/Karlitos%20Way/DSC00292_vidtws.jpg);
+}
+#4 {
+    background-image: url(http://res.cloudinary.com/daanr37/image/upload/v1610648265/Karlitos%20Way/DSC00289_dj0pyh.jpg);
+}
+#5 {
+    background-image: url(http://res.cloudinary.com/daanr37/image/upload/v1610648288/Karlitos%20Way/IMG_0060-1_vlgago.jpg);
+}
