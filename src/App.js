@@ -1,6 +1,8 @@
-import './App.css';
-import Toggle from './Toggle'
+import './VideoSlider.css';
+import './Portfolio.css';
+import Toggle from './Toggle';
 import VideoSlider from './VideoSlider';
+import Portfolio from './Portfolio';
 import { SliderData } from './SliderData';
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
         <>
             <VideoSlider slides={SliderData} />
             <Toggle />
+            <Portfolio />
         </>
     )
 }

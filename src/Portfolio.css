@@ -1,0 +1,56 @@
+.portfolio-page {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.projects {
+    position: relative;
+}
+
+.backgrounds {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+}
+
+img {
+    top: 0px;
+    width: 100vw;
+    height: 20vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    position: relative;
+}
+
+.title a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+}
+
+.stills {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    padding: 69px 0;
+    display: block;
+    background: rgba(0,0,0,.3);
+    border: none;
+    color: #fff;
+    text-align: center;
+    transition: background-color .2s ease-in-out;
+    overflow: hidden;
+    text-decoration: none;
+}
