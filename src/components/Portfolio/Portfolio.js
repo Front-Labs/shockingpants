@@ -1,4 +1,5 @@
 import React from 'react';
+import './Portfolio.css';
 
 function Portfolio () {
     // const [open, setOpen] = useState(false);
