@@ -10,6 +10,7 @@ export const StyledBurger = styled.button`
   width: 2rem;
   height: 2rem;
   background: transparent;
+  mix-blend-mode: difference;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -22,23 +23,28 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ theme, open }) => open ? theme.primaryDark : theme.primaryLight};
+    background: white;
+    // ${({ theme, open }) => open ? theme.primaryDark : theme.primaryLight};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+    mix-blend-mode: difference;
 
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      mix-blend-mode: difference;
     }
 
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+      mix-blend-mode: difference;
     }
 
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      mix-blend-mode: difference;
     }
   }
 `;

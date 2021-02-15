@@ -4,7 +4,7 @@ import './Portfolio.css';
 function Portfolio () {
     // const [open, setOpen] = useState(false);
     return (
-        <section className="portfolio-page">
+        <section id="portfolio1" className="portfolio-page">
           <div className="projects">
             <div className="backgrounds">
                 <div className="title">
@@ -23,12 +23,6 @@ function Portfolio () {
                     <img alt="pic5" src="images/Pic5.jpg" /><a>OG's are coming</a>
                 </div>
             </div>
-    
-            
-          
-
-            
-
           </div>
         </section>
       

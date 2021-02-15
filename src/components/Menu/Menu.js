@@ -1,22 +1,44 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import { motion } from 'framer-motion';
+// import { Link } from 'react-router-dom';
 
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
-        <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
-        About us
-      </a>
-      <a href="/">
-        <span role="img" aria-label="price">&#x1f4b8;</span>
-        Pricing
-        </a>
-      <a href="/">
-        <span role="img" aria-label="contact">&#x1f4e9;</span>
+      <motion.a href="/"
+        whileHover={{ 
+        scale: 1.4,
+        originX: 0,
+        textShadow: "0px 0px 2px rgb(255,255,255)"
+        }}
+        transition={{ type: 'spring', stiffness: 120 }}
+      >
+        Me
+      </motion.a>
+
+      <motion.a href="#portfolio1"
+        whileHover={{ 
+        scale: 1.4,
+        originX: 0,
+        textShadow: "0px 0px 2px rgb(255,255,255)"
+        }}
+        transition={{ type: 'spring', stiffness: 120 }}
+      >
+        Work
+      </motion.a>
+
+      <motion.a href="/"
+        whileHover={{ 
+        scale: 1.4,
+        originX: 0,
+        textShadow: "0px 0px 2px rgb(255,255,255)"
+        }}
+        transition={{ type: 'spring', stiffness: 120 }}
+      >
         Contact
-        </a>
+      </motion.a>
     </StyledMenu>
   )
 }
@@ -26,3 +48,54 @@ Menu.propTypes = {
 }
 
 export default Menu;
+
+// const Menu = ({ open }) => {
+//   return (
+//     <StyledMenu open={open}>
+//      <ul className="menu-buttons">
+
+//         <motion.li
+//             whileHover={{ 
+//             scale: 1.4,
+//             originX: 0,
+//             textShadow: "0px 0px 2px rgb(255,255,255)"
+//             }}
+//             transition={{ type: 'spring', stiffness: 120 }}
+//         ><a href="/">
+//           Me
+//         </a></motion.li>
+        
+//         <motion.li
+//             whileHover={{ 
+//             scale: 1.4,
+//             originX: 0,
+//             textShadow: "0px 0px 2px rgb(255,255,255)"
+//             }}
+//             transition={{ type: 'spring', stiffness: 120 }}
+//         ><a href="/">
+//           Work
+//         </a></motion.li>
+
+//         <motion.li
+//             whileHover={{ 
+//             scale: 1.4,
+//             originX: 0,
+//             textShadow: "0px 0px 2px rgb(255,255,255)"
+//             }}
+//             transition={{ type: 'spring', stiffness: 120 }}
+//         ><a href="/">
+//           Contact
+//         </a></motion.li>
+//      </ul>
+//     </StyledMenu>
+//   )
+// }
+
+// Menu.propTypes = {
+//   open: bool.isRequired,
+// }
+
+// export default Menu;
+
+
+

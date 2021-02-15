@@ -4,7 +4,9 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${({ theme }) => theme.primaryLight};
+  background: transparent;
+  mix-blend-mode: difference;
+  // ${({ theme }) => theme.primaryLight};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -22,9 +24,12 @@ export const StyledMenu = styled.nav`
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.primaryDark};
+    color: white;
+    opacity: 0.6;
+    list-style: none;
+    // ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
     
@@ -34,7 +39,9 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: ${({ theme }) => theme.primaryHover};
-    }
+      opacity: 1;
+    //   transition: 400ms;
+    //   // ${({ theme }) => theme.primaryHover};
+    // }
   }
 `;
