@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
+import Vimeo from '@u-wave/react-vimeo';
 import {SliderData} from './SliderData';
+import './VideoSlider.css'
 
 const VideoSlider = ({slides}) => {
     const [current, setCurrent] = useState(0);
@@ -20,11 +22,10 @@ const VideoSlider = ({slides}) => {
                         key = {index}
                     >
                         {index === current && (
-                            // <iframe
-                            //     title={index} src={slide.url} className='video' frameBorder="0" allow="autoPlay ;fullscreen" allowFullScreen
-                            // />
-                            <video
-                                src={slide.url} className='video' autoPlay muted
+                            <Vimeo
+                                video={slide.videoId}
+                                className='video'
+                                background
                             />
                         )}
                     </div>
