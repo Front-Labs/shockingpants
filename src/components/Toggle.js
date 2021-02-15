@@ -1,9 +1,8 @@
-// import React from 'react';
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './global';
-import { theme } from './theme';
-import { Burger, Menu } from './components';
+import { GlobalStyles } from '../global';
+import { theme } from '../theme';
+import { Burger, Menu } from './';
 
 function Toggle () {
     const [open, setOpen] = useState(false);
