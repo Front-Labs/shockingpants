@@ -8,7 +8,6 @@ function Portfolio () {
     // const [open, setOpen] = useState(false);
     return (
         <section id="portfolio1" className="portfolio-page">
-            <div className="backgrounds">
                 <div className="title">
                     <Vimeo 
                     video='511153244'
@@ -74,7 +73,7 @@ function Portfolio () {
                         Foot Locker // Di-Meh<span aria-hidden="true">Foot Locker // Di-Meh</span>
                       </a>
                 </div>
-            </div>
+            
         </section>
       
     );

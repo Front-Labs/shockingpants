@@ -1,13 +1,18 @@
 .slider {
-    position: relative;
     height: 92vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
+    width: 100%;
+    background-color: black;
 }
 
-.video {
-    height: 100%;
-    width: 100%;
+.slide .active {
+  height: 100%;
+  position: absolute;
 }
+
+/* iframe { 
+  display: block; 
+  width: 100%; 
+  border: none; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+} */
