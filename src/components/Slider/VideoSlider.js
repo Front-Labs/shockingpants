@@ -10,7 +10,7 @@ const VideoSlider = ({slides}) => {
         const interval = setInterval(() => {
             setCurrent(current === length-1 ? 0 : current + 1);
             //Featured Slide Transition
-        }, 5000);
+        }, 10000);
         return () => clearInterval(interval);
     });
     return (
@@ -25,7 +25,7 @@ const VideoSlider = ({slides}) => {
                             <Vimeo
                                 video={slide.videoId}
                                 className='video'
-                                background
+                                responsive
                             />
 
                         )}
