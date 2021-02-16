@@ -6,6 +6,7 @@
 
 .slide .active {
   height: 100%;
+  position: absolute;
 }
 
 /* iframe { 
