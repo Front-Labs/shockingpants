@@ -22,12 +22,8 @@ const VideoSlider = ({slides}) => {
                         key = {index}
                     >
                         {index === current && (
-                            <Vimeo
-                                video={slide.videoId}
-                                className='video'
-                                responsive
-                            />
-
+                            <iframe title="1" src={slide.url} min-width="100%" max-height="100%">
+                            </iframe>
                         )}
                     </div>
                 )
@@ -37,3 +33,4 @@ const VideoSlider = ({slides}) => {
 };
 
 export default VideoSlider;
+
