@@ -6,10 +6,6 @@
     justify-content: center;
 }
 
-.projects {
-    position: relative;
-}
-
 .backgrounds {
     position: relative;
     top: 0;
@@ -20,27 +16,82 @@
     z-index: 1;
 }
 
-img {
-    top: 0px;
-    width: 100vw;
-    height: 20vh;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-}
-
 .title {
     position: relative;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    /* top: 0px; */
 }
 
 .title a {
     position: absolute;
     left: 50%;
     top: 50%;
-    color: white;
+    transform: translate(-50%, -50%);
 }
 
-.stills {
+.glitch {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow:
+        0.05em 0 0 rgba(255, 0, 0, 0.75), 
+        -0.025em -.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em .05em 0 rgba(0,0,255,0.75);
+
+        /* animation: glitch 500ms infinite; */
+
+}
+
+
+.glitch:hover {
+    animation: glitch 500ms infinite;
+    cursor: alias;
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), 
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), 
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 
+        0.05em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 
+        0.05em 0 0 rgba(0, 255, 0, 0.75),
+        0 -0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), 
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); 
+    }
+}
+
+/* .stills {
     width: 100%;
     height: 220px;
     margin: 0;
@@ -53,4 +104,4 @@ img {
     transition: background-color .2s ease-in-out;
     overflow: hidden;
     text-decoration: none;
-}
+} */
