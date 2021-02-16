@@ -27,6 +27,7 @@ const VideoSlider = ({slides}) => {
                                 className='video'
                                 background
                             />
+
                         )}
                     </div>
                 )
