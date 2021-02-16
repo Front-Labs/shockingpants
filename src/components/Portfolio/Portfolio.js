@@ -8,7 +8,6 @@ function Portfolio () {
     // const [open, setOpen] = useState(false);
     return (
         <section id="portfolio1" className="portfolio-page">
-            <div className="backgrounds">
                 <div className="title">
                     <Vimeo 
                     video='511153244'
@@ -17,7 +16,10 @@ function Portfolio () {
                     // autoplay='true'
                     muted='true'
                     quality='auto'
-                    /><a className="glitch">You don't own me</a>
+                    /><a className="glitch">
+                        <span aria-hidden="true">You don't own me</span>
+                        You don't own me<span aria-hidden="true">You don't own me</span>
+                      </a>
                 </div>
                 <div className="title">
                 <Vimeo 
@@ -27,7 +29,10 @@ function Portfolio () {
                     // autoplay='true'
                     muted='true'
                     quality='auto'
-                    /><a>Huawei: Rethink possibilities</a>
+                    /><a className="glitch">
+                        <span aria-hidden="true">Huawei: Rethink possibilities</span>
+                        Huawei: Rethink possibilities<span aria-hidden="true">Huawei: Rethink possibilities</span>
+                      </a>
                 </div>
                 <div className="title">
                 <Vimeo 
@@ -37,7 +42,10 @@ function Portfolio () {
                     // autoplay='true'
                     muted='true'
                     quality='auto'
-                    /><a>ABN AMRO: The dark side of Money</a>
+                    /><a className="glitch">
+                        <span aria-hidden="true">ABN AMRO: The dark side of Money</span>
+                        ABN AMRO: The dark side of Money<span aria-hidden="true">ABN AMRO: The dark side of Money</span>
+                      </a>
                 </div>
                 <div className="title">
                 <Vimeo 
@@ -47,7 +55,10 @@ function Portfolio () {
                     // autoplay='true'
                     muted='true'
                     quality='auto'
-                    /><a>Mazda: MX-30 Designer Review</a>
+                    /><a className="glitch">
+                        <span aria-hidden="true">Mazda: MX-30 Designer Review</span>
+                        Mazda: MX-30 Designer Review<span aria-hidden="true">Mazda: MX-30 Designer Review</span>
+                      </a>
                 </div>
                 <div className="title">
                 <Vimeo 
@@ -57,9 +68,12 @@ function Portfolio () {
                     // autoplay='true'
                     muted='true'
                     quality='auto'
-                    /><a>Foot Locker // Di-Meh</a>
+                    /><a className="glitch">
+                        <span aria-hidden="true">Foot Locker // Di-Meh</span>
+                        Foot Locker // Di-Meh<span aria-hidden="true">Foot Locker // Di-Meh</span>
+                      </a>
                 </div>
-            </div>
+            
         </section>
       
     );
