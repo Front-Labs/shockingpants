@@ -30,7 +30,7 @@ const Menu = ({ open }) => {
         Me
       </motion.a> */}
 
-      <motion.a href="/"
+      <motion.a href="#contact"
         whileHover={{ 
         scale: 1.4,
         originX: 0,
