@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <motion.a href="/"
+      <motion.a href="#about"
         whileHover={{ 
         scale: 1.4,
         originX: 0,

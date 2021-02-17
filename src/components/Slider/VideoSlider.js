@@ -15,8 +15,11 @@ const VideoSlider = ({ slides }) => {
     return () => clearInterval(interval);
   });
   return (
-    <section id='slider'>
 
+    <section id='slider'>
+      <div className="logo-mark">
+        <img src="images/Post-Mark.png" alt="logo" />
+      </div>
 
       {SliderData.map((slide, index) => {
         return (
