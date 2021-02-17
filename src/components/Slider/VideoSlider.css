@@ -1,14 +1,34 @@
 .slider {
-    height: 92vh;
-    width: 100%;
+    position: relative;
+    height: 90vh;
+    width: 110vw;
     background-color: black;
+    overflow: hidden;
 }
+
+/* .slide {
+  position: absolute;
+  top: -10vh;
+} */
 
 .slide .active {
   height: 100%;
   position: absolute;
+  overflow: hidden;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1rem;
+
+}
+
+.card {
+  height: 10vh;
+  border: hotpink solid 1px;
+}
 /* iframe { 
   display: block; 
   width: 100%; 

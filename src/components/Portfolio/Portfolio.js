@@ -12,56 +12,55 @@ function Portfolio () {
                 <div className="title">
                     <Vimeo 
                     video='511153244'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">You don't own me</a>
                 </div>
                 <div className="title">
                 <Vimeo 
                     video='511146982'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a>Huawei: Rethink possibilities</a>
                 </div>
                 <div className="title">
                 <Vimeo 
                     video='511150620'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a>ABN AMRO: The dark side of Money</a>
                 </div>
                 <div className="title">
                 <Vimeo 
                     video='511149009'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a>Mazda: MX-30 Designer Review</a>
                 </div>
                 <div className="title">
                 <Vimeo 
                     video='511149224'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a>Foot Locker // Di-Meh</a>
                 </div>
             </div>
         </section>
-      
     );
 }
 
