@@ -14,6 +14,13 @@ const Contact = () => {
   // }, false)
   return (
     <section id="contact">
+      <a href="#slider">
+        <div href="" className="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
       <div className="contact-background" id="contact-bw" style={{ backgroundImage: "url(images/contact.jpg)" }}></div>
       <div className="contact-background" id="contact-col" style={{ backgroundImage: "url(images/contact-mask.png)" }}></div>
     </section>
