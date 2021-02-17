@@ -7,15 +7,17 @@ function CardProgress() {
   useEffect(() => {
     const interval = setInterval(() => {
       updateValue(oldValue => {
-        const newValue = oldValue + 1
+        const newValue = oldValue + 0.25
         if (newValue === 100) {
           return () => clearInterval(interval)
         }
         return newValue
       })
-    }, 50)
+    }, 25)
   }, [])
-  return <ProgressBar value={value} />
+  return (
+  <ProgressBar value={value} />
+  )
 }
 
 export default CardProgress
