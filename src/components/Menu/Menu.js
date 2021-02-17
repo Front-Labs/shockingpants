@@ -7,16 +7,6 @@ import { motion } from 'framer-motion';
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <motion.a href="#about"
-        whileHover={{ 
-        scale: 1.4,
-        originX: 0,
-        textShadow: "0px 0px 2px rgb(255,255,255)"
-        }}
-        transition={{ type: 'spring', stiffness: 120 }}
-      >
-        Me
-      </motion.a>
 
       <motion.a href="#portfolio1"
         whileHover={{ 
@@ -28,6 +18,17 @@ const Menu = ({ open }) => {
       >
         Work
       </motion.a>
+
+      {/* <motion.a href="#about"
+        whileHover={{ 
+        scale: 1.4,
+        originX: 0,
+        textShadow: "0px 0px 2px rgb(255,255,255)"
+        }}
+        transition={{ type: 'spring', stiffness: 120 }}
+      >
+        Me
+      </motion.a> */}
 
       <motion.a href="/"
         whileHover={{ 
