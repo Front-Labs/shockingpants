@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Vimeo from '@u-wave/react-vimeo';
 import { SliderData } from './SliderData';
+import CardProgress from '../Progress/CardProgress'
 import './VideoSlider.css'
 
 const VideoSlider = ({ slides }) => {
@@ -14,7 +15,8 @@ const VideoSlider = ({ slides }) => {
     return () => clearInterval(interval);
   });
   return (
-    <section className='slider'>
+
+    <section id='slider'>
       <div className="logo-mark">
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
@@ -26,17 +28,20 @@ const VideoSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <Vimeo
-                video={slide.videoId}
-                responsive='true'
-                background='true'
-                quality='auto'
-              />
+              <figure style={{ margin: 0 }}>
+                <Vimeo
+                  video={slide.videoId}
+                  responsive
+                  background
+                />
+                <CardProgress />
+              </figure>
             )}
           </div>
+
         )
       })}
-    </section>
+    </section >
   );
 };
 

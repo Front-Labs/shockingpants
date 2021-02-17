@@ -1,12 +1,9 @@
 .slider {
-    height: 92vh;
-    width: 100%;
+    position: relative;
+    height: 90vh;
+    width: 110vw;
     background-color: black;
-}
-
-.slide .active {
-    height: 100%;
-    position: absolute;
+    overflow: hidden;
 }
 
 .logo-mark img {
@@ -17,12 +14,19 @@
     top: 5%;
     left: 86%;
     z-index: 1;
+
+.cards {
+  display: flex;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
 }
 
-/* iframe { 
-  display: block; 
-  width: 100%; 
-  border: none; 
-  overflow-y: auto; 
-  overflow-x: hidden;
-} */
+.card {
+  height: 30vh;
+  text-align: center;
+  color: white;
+}
