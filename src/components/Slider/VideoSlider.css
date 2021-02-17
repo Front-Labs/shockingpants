@@ -8,11 +8,10 @@
 
 .logo-mark img {
     position: absolute;
-    width: 10%;
-    /* width: 150px; */
+    width: 8%;
     height: auto;
     top: 5%;
-    left: 86%;
+    right: 4%;
     z-index: 1;
 }
 
