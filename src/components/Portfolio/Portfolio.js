@@ -11,10 +11,10 @@ function Portfolio () {
                 <div className="title">
                     <Vimeo 
                     video='511153244'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">
                         <span aria-hidden="true">You don't own me</span>
@@ -24,10 +24,10 @@ function Portfolio () {
                 <div className="title">
                 <Vimeo 
                     video='511146982'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">
                         <span aria-hidden="true">Huawei: Rethink possibilities</span>
@@ -37,10 +37,10 @@ function Portfolio () {
                 <div className="title">
                 <Vimeo 
                     video='511150620'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">
                         <span aria-hidden="true">ABN AMRO: The dark side of Money</span>
@@ -50,10 +50,10 @@ function Portfolio () {
                 <div className="title">
                 <Vimeo 
                     video='511149009'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">
                         <span aria-hidden="true">Mazda: MX-30 Designer Review</span>
@@ -63,10 +63,10 @@ function Portfolio () {
                 <div className="title">
                 <Vimeo 
                     video='511149224'
-                    responsive='true'
-                    autopause='true'
-                    // autoplay='true'
-                    muted='true'
+                    responsive
+                    autopause
+                    // autoplay
+                    muted
                     quality='auto'
                     /><a className="glitch">
                         <span aria-hidden="true">Foot Locker // Di-Meh</span>
@@ -75,7 +75,6 @@ function Portfolio () {
                 </div>
             
         </section>
-      
     );
 }
 

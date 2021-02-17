@@ -14,7 +14,8 @@ const VideoSlider = ({ slides }) => {
     return () => clearInterval(interval);
   });
   return (
-    <section className='slider'>
+    <section id='slider'>
+
       {SliderData.map((slide, index) => {
         return (
           <div
@@ -24,14 +25,27 @@ const VideoSlider = ({ slides }) => {
             {index === current && (
               <Vimeo
                 video={slide.videoId}
-                responsive='true'
-                background='true'
-                quality='auto'
+                responsive
+                background
               />
             )}
           </div>
         )
       })}
+      <div className='cards'>
+        <div className='card'>
+          <h2>Header</h2>
+        </div>
+        <div className='card'>
+          <h2>Header</h2>
+        </div>
+        <div className='card'>
+          <h2>Header</h2>
+        </div>
+        <div className='card'>
+          <h2>Header</h2>
+        </div>
+      </div>
     </section>
   );
 };
