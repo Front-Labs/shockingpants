@@ -5,8 +5,18 @@
 }
 
 .slide .active {
-  height: 100%;
-  position: absolute;
+    height: 100%;
+    position: absolute;
+}
+
+.logo-mark img {
+    position: absolute;
+    width: 10%;
+    /* width: 150px; */
+    height: auto;
+    top: 5%;
+    left: 86%;
+    z-index: 1;
 }
 
 /* iframe { 

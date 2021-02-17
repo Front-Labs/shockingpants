@@ -8,10 +8,11 @@
 }
 
 .title {
+    display: flex;
     position: relative;
     height: 25vh;
-    /* display: flex;
-    flex-direction: column; */
+    flex-direction: column;  
+    justify-content: center;  
     overflow: hidden;
     /* width: 100vw; */
     /* top: 0px; */
@@ -31,12 +32,19 @@
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
+
+a:active, a:focus {
+    outline: none;
+    /* border: none; */
+    -moz-outline-style: none;
+    outline-style: none;
+  }
 
 .glitch {
     /* position: relative; */
-    font-size: 2rem;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -68,14 +76,7 @@
 .glitch:hover {
     animation: glitch 500ms infinite;
     cursor: pointer;
-    font-size: 3rem !important;
 }
-
-/* .glitch:hover {
-    animation: glitch 500ms infinite;
-    cursor: pointer;
-} */
-
 
 @keyframes glitch {
     0% {
