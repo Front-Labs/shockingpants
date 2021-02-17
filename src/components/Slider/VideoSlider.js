@@ -34,7 +34,7 @@ const VideoSlider = ({ slides }) => {
                   responsive
                   background
                 />
-                <CardProgress />
+                {/* <CardProgress /> */}
               </figure>
             )}
           </div>
