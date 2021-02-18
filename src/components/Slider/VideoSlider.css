@@ -15,18 +15,15 @@
     z-index: 1;
 }
 
-.cards {
-  display: flex;
-  width: 100%;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  justify-content: space-around;
+figure h1 {
   position: absolute;
-  bottom: 0;
+  left: 50%;
+  bottom: 10%;
+  transform: translate( -50%);
 }
-
-.card {
-  height: 30vh;
-  text-align: center;
-  color: white;
+figure h2 {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate( -50%);
 }

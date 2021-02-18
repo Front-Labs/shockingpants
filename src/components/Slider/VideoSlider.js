@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Vimeo from '@u-wave/react-vimeo';
-import { SliderData } from './SliderData';
+import { sliderData } from './sliderData';
 import CardProgress from '../Progress/CardProgress'
 import './VideoSlider.css'
+import Card from '../Cards/Card'
 
 const VideoSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -21,28 +22,37 @@ const VideoSlider = ({ slides }) => {
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
 
-      {SliderData.map((slide, index) => {
+      {sliderData.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}
             key={index}
           >
             {index === current && (
-              <figure style={{ margin: 0 }}>
                 <Vimeo
                   video={slide.videoId}
                   responsive
                   background
                 />
-                {/* <CardProgress /> */}
-              </figure>
-            )}
+            )
+            }
           </div>
-
         )
       })}
+      <div className="cards">
+        {sliderData.map((slide, index) => {
+          return (
+            <Card
+              title={slide.title}
+              description={slide.description}
+              active={index === current}
+            />
+          )
+        })}
+      </div>
     </section >
   );
 };
 
 export default VideoSlider;
+
