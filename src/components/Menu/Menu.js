@@ -4,9 +4,9 @@ import { StyledMenu } from './Menu.styled';
 import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
   return (
-    <StyledMenu open={open}>
+    <StyledMenu open={open} onClick={() => setOpen(!open)}>
 
       <motion.a href="#portfolio1"
         whileHover={{ 
