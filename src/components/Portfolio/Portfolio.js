@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './Portfolio.css';
 import Vimeo from '@u-wave/react-vimeo';
 
-
 function Portfolio () {
     // const [open, setOpen] = useState(false);
     return (
@@ -14,7 +13,7 @@ function Portfolio () {
                     muted='true'
                     quality='auto'
                     controls='false'
-                    /><a href="https://vimeo.com/511153244" target="_blank" rel="noopener noreferrer" className="glitch">
+                    /><a href="http://localhost:3000/embeddedplayer" target="_blank" rel="noopener noreferrer" className="glitch"> 
                         <span aria-hidden="true">You don't own me</span>
                         You don't own me<span aria-hidden="true">You don't own me</span>
                       </a>
