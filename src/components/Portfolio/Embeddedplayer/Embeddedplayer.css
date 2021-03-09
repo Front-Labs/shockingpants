@@ -5,6 +5,16 @@
     background-color: black;
   }
 
+.times img {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    width: 3vw;
+    top: 5%;
+    right: 4%;
+    filter: invert(1);
+}
+
 .player {
     position: absolute;
     top: 50%;
