@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import { Route, Link, BrowserRouter } from 'react-router-dom'
-import EmbeddedPlayer from './components/Embeddedplayer/Embeddedplayer';
+import { Route, BrowserRouter } from 'react-router-dom'
+import EmbeddedPlayer from './components/Portfolio/Embeddedplayer/Embeddedplayer';
 
 const routs = (
   < BrowserRouter >
-     <div>
-        <Route exact path="/" component={App} />
-        <Route path="/embeddedplayer" component={ EmbeddedPlayer } />
-     </div>
+    <div>
+      <Route exact path="/" component={App} />
+      <Route path="/embeddedplayer" component={EmbeddedPlayer} />
+    </div>
   </ BrowserRouter >
 );
 
