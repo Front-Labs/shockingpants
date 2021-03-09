@@ -1,7 +1,7 @@
 #slider {
     position: relative;
     height: 105vh;
-    min-width: 100vw;
+    min-width: 100%;
     background-color: black;
     overflow: hidden;
 }
@@ -13,6 +13,11 @@
     top: 5%;
     right: 4%;
     z-index: 1;
+}
+
+#player {
+  height: 105vh;
+  min-width: 100%;
 }
 
 figure h1 {
