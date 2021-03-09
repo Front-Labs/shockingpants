@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Vimeo from '@u-wave/react-vimeo';
 import { sliderData } from './sliderData';
-import CardProgress from '../Progress/CardProgress'
+import CardProgress from './Progress/CardProgress'
 import './VideoSlider.css'
-import Card from '../Cards/Card'
+import Card from './Cards/Card'
+import VimeoPlayer from './VimeoPlayer'
 
 const VideoSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -29,11 +30,7 @@ const VideoSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-                <Vimeo
-                  video={slide.videoId}
-                  responsive
-                  background
-                />
+                <div id="{slide.videoId}"></div>
             )
             }
           </div>

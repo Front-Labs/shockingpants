@@ -1,4 +1,4 @@
-import Toggle from './components/Toggle';
+import Toggle from './components/Navbar/Toggle';
 import VideoSlider from './components/Slider/VideoSlider';
 import Portfolio from './components/Portfolio/Portfolio';
 import { sliderData } from './components/Slider/sliderData';
@@ -11,7 +11,6 @@ function App() {
       <Toggle />
       <Portfolio />
       <Contact />
-      {/* <EmbeddedPlayer /> */}
     </>
   )
 }
