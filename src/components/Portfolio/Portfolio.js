@@ -3,10 +3,9 @@ import './Portfolio.css';
 import Vimeo from '@u-wave/react-vimeo';
 import { Link } from 'react-router-dom'
 
-
 function Portfolio() {
-  // const [open, setOpen] = useState(false);
-  return (
+
+    return (
     <section id="portfolio1" className="portfolio-page">
       <div className="title">
         <Vimeo
