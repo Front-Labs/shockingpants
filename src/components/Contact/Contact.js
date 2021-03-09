@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <a href="#slider">
-        <div href="" className="arrow">
+        <div className="arrow">
           <span></span>
           <span></span>
           <span></span>

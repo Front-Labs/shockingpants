@@ -13,10 +13,10 @@ function Portfolio () {
                     muted='true'
                     quality='auto'
                     controls='false'
-                    /><a href="http://localhost:3000/embeddedplayer" target="_blank" rel="noopener noreferrer" className="glitch"> 
+                    /><a href="http://localhost:3000/embeddedplayer" rel="noopener noreferrer" className="glitch"> 
                         <span aria-hidden="true">You don't own me</span>
                         You don't own me<span aria-hidden="true">You don't own me</span>
-                      </a>
+                    </a>
                 </div>
                 <div className="title">
                 <Vimeo 
