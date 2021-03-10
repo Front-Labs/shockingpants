@@ -1,10 +1,9 @@
-import React from "react"
 import './Embeddedplayer.css'
 
 const EmbeddedPlayer = () => {
     return (
       <section id="embeddedplayer-container">
-       <a href="http://localhost:3000/#portfolio1">
+       <a href="/#portfolio1">
           <div className="times">
             <img src="images/times-circle-regular.svg" alt="times" />
           </div>
