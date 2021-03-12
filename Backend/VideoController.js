@@ -13,8 +13,10 @@ exports.videos = (req, res) => {
         if (error) {
         console.log(error);
         }
-        app.get('/', (req, res) => {
-            res.send(body.data[0].name)
-        })
+        res.status(200).json()
     })
 }
+
+app.get('/', (req, res) => {
+    res.send(body.data[0].name)
+})
