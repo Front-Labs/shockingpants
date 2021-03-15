@@ -1,24 +1,29 @@
-import React, { useState } from 'react';
-import './Portfolio.css';
-// import Vimeo from '@u-wave/react-vimeo';
-import { Link } from 'react-router-dom';
-import { portfolioData } from './portfolioData.js';
-import Player from '@vimeo/player';
+import { useState, useEffect } from 'react'
+import './Portfolio.css'
+import { Link } from 'react-router-dom'
+import { portfolioData } from './portfolioData.js'
 
-function Portfolio({ portfolio }) {
-const [player, setPlayer] = useState(null)
+export default function Portfolio() {
+  // const [videoTitles, setVideoTitles] = useState([])
+
+  fetch('http://localhost:3001/')
+    .then(response => {
+      // const subjects = [];
+      console.log(response)
+      // setVideoTitles(subjects)
+    })
+  // .catch(error => setVideoTitles([]));
 
   return (
     <section id="portfolio1" className="portfolio-page">
 
-
       {portfolioData.map((tab, index) => {
-          
-        // let iframe = document.querySelector('title');
-        // let player = new Vimeo.Player(iframe);
+
+        // let iframe = document.querySelector('title')
+        // let player = new Vimeo.Player(iframe)
         // player.getVideoTitle().then(function (title) {
-        //   console.log('title:', title);
-        // });
+        //   console.log('title:', title)
+        // })
         // setPlayer(new Player( index, {
         //   id: tab.url,
         //   quality: "360p",
@@ -28,8 +33,7 @@ const [player, setPlayer] = useState(null)
         //   controls: false
         // }))
         return (
-          <div id={ index } className="title">
-        
+          <div id={index} key={index} className="title">
 
             <Link to="/embeddedplayer" className="glitch">
               <span aria-hidden="true">
@@ -40,15 +44,10 @@ const [player, setPlayer] = useState(null)
                 You don't own me
                 </span>
             </Link>
-            
-          </div>
 
+          </div>
         )
       })}
-
     </section>
-  );
+  )
 }
-
-
-export default Portfolio;

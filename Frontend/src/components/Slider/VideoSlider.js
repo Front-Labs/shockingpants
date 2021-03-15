@@ -49,6 +49,7 @@ const VideoSlider = ({ slides }) => {
               title={slide.title}
               description={slide.description}
               active={index === current}
+              key={index}
             />
           )
         })}
