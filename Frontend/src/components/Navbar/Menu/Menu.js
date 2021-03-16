@@ -8,7 +8,7 @@ const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open} onClick={() => setOpen(!open)}>
 
-      <motion.a href="#portfolio1"
+      <motion.a href="#portfolio"
         whileHover={{ 
         scale: 1.4,
         originX: 0,

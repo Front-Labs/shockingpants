@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   );
   client.request({
     method: 'GET',
-    path: '/me/projects/3869831/videos',
+    path: '/me/projects/3869831/videos?fields=name,uri,pictures.sizes.link',
   }, function (error, body, status_code, headers) {
     if (error) {
       console.log(error);

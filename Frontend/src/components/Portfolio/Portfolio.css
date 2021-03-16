@@ -1,7 +1,6 @@
-.portfolio-page {
+#portfolio {
     position: relative;
     display: flex;
-    /* height: 100vh; */
     max-width: 100%;
     justify-content: center;
     flex-direction: column;
