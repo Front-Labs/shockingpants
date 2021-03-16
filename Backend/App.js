@@ -1,5 +1,7 @@
 const express = require("express");
 const cors = require("cors");
+// const { json } = require("body-parser");
+
 const port = process.env.PORT || 3001;
 const app = express();
 
@@ -19,9 +21,8 @@ app.get("/", (req, res) => {
     if (error) {
       console.log(error);
     }
-    res.status(200).json(body.data)
+    res.send(body.data)
   });
-    // res.send(body);
 });
 
 app.listen(port, () => {

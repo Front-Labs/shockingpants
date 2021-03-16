@@ -1,5 +1,5 @@
 {
-  "name": "shockingpants",
+  "name": "FrontEnd",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@vimeo/player": "^2.15.0",
-    "axios": "^0.21.1",
     "framer-motion": "^3.3.0",
     "n": "^7.0.0",
     "react": "^17.0.1",
