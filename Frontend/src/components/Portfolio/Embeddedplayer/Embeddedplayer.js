@@ -3,8 +3,7 @@ import './Embeddedplayer.css'
 
 const EmbeddedPlayer = () => {
   const location = useLocation()
-  const link = location.state.link
-  let url = `https://player.vimeo.com${link}` 
+  let url = `https://player.vimeo.com${location.state.link}` 
   url = url.replace('/videos/','/video/')
 
     return (
@@ -17,10 +16,9 @@ const EmbeddedPlayer = () => {
         <ul className="player">
           <li className="video-link"> 
             <iframe
-              title={link}
+              title={url}
               src={url}
-              // width="1280"
-              // height="720"
+              responsive
               frameborder="0"
               allowfullscreen
             ></iframe>

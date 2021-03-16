@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import './Portfolio.css'
 import { Link } from 'react-router-dom'
+import './Portfolio.css'
 
 export default function Portfolio() {
   const [data, setData] = useState([])
