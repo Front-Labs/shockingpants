@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import './Portfolio.css'
 
 export default function Portfolio() {
-  const [data, setData] = useState([])
+  const [portfolioData, setPortfolioData] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3001/').then(response => response.json())
-      .then(data => {
-        setData(data)
+    fetch('http://localhost:3001/portfolio').then(response => response.json())
+      .then(portfolioData => {
+        setPortfolioData(portfolioData)
       }).catch(error => {
         console.log(error.message)
       })
@@ -15,7 +15,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="portfolio-page" >
-      {data.map((video, index) => {
+      {portfolioData.map((video, index) => {
         return (
           <div
             key={index}

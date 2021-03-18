@@ -5,8 +5,8 @@ const Card = (props) => {
 
   return (
     <div className={`card ${props.active ? 'active' : ''}`}>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
+      <h3>{props.title}</h3>
+      {/* <p>{props.description}</p> */}
     </div >
   )
 }
