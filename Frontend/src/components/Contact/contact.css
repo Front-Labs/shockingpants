@@ -14,13 +14,77 @@
   top: 0;
 }
 
-#contact-bw {
-  filter: grayscale(100%)
+.quote {
+  position: absolute;
+  z-index: 1;
+  left: 10rem;
+  top: 4rem;
 }
 
-#contact-col {
-   filter: none !important;
+.quote2 {
+  position: absolute;
+  z-index: 1;
+  right: 10rem;
+  top: 14rem;
 }
+
+p {
+  color: white;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.contact-buttons {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  z-index: 1;
+}
+
+.contact-buttons li {
+  float: left;
+  margin-right: 30px;
+  list-style-type: none;
+}
+
+.contact-buttons li img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: none;
+  filter: invert(1);
+}
+
+.contact-buttons li a {
+  opacity: 0.5;
+}
+
+.contact-buttons li a:hover {
+  opacity: 1;
+  transition: 400ms ease-in-out;
+}
+
+
+
+
+
+
+
+/* #contact-col {
+  width: 32%;
+  height: 30%;
+  left: 37.5rem;
+  position: relative;
+  border-radius: 0.5%;
+} */
+
+/* #contact-bw {
+  filter: grayscale(100%)
+} */
+
+/* #contact-col {
+   filter: none !important;
+} */
 
 .arrow {
   position: absolute;

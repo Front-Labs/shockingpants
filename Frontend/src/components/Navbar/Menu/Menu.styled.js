@@ -7,7 +7,7 @@ export const StyledMenu = styled.nav`
   background: transparent;
   mix-blend-mode: difference;
   // ${({ theme }) => theme.primaryLight};
-  height: 100vh;
+  height: 75vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
@@ -23,7 +23,7 @@ export const StyledMenu = styled.nav`
   a {
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 3rem 0;
     font-weight: 500;
     letter-spacing: 0.5rem;
     color: white;
