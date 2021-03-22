@@ -13,7 +13,6 @@ export default function VideoSlider() {
     fetch('http://localhost:3001/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
-        console.log("getting")
         setPlayer(new Player('player', {
           id: featureData[0].uri.replace('/videos/', ''),
           quality: "360p",
