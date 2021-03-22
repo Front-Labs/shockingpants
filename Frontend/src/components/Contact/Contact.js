@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="quote">
-        <p>"Best editor in town"</p>
+        <p>"Editor is what I am"</p>
       </div>
       <div className="quote2">
-        <p>"And handsome too"</p>
+        <p>"for tv, film and commercials"</p>
       </div>
 
       <ul className="contact-buttons">
