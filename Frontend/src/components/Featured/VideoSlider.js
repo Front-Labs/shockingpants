@@ -5,16 +5,16 @@ import Card from './Cards/Card'
 import ReactPlayer from 'react-player/vimeo'
 
 export default function VideoSlider() {
-
-  const [featureData, setFeatureData] = useState([])
-  const [videoId, setVideoId] = useState('')
   const [current, setCurrent] = useState(0)
+  const [featureData, setFeatureData] = useState([])
+  // const [videoId, setVideoId] = useState('')
+
 
   useEffect(() => {
     fetch('http://localhost:3001/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
-        setVideoId('https://player.vimeo.com'+featureData[0].uri.replace('/videos/', '/video/'))
+        // setVideoId('https://player.vimeo.com' + featureData[0].uri.replace('/videos/', '/video/'))
       }).catch(error => {
         console.log(error.message)
       })
@@ -23,8 +23,7 @@ export default function VideoSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(current === featureData.length - 1 ? 0 : current + 1)
-      setVideoId('https://player.vimeo.com'+featureData[current].uri.replace('/videos/', '/video/'))
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval)
   })
 
@@ -33,25 +32,34 @@ export default function VideoSlider() {
       <div className="logo-mark">
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
-      <ReactPlayer
-        className='player'
-        url={videoId}
-        config={{
-          vimeo: {
-            playerOptions: {
-              background: true,
-              quality: "360p",
-              responsive: true
-            }
-          }
-        }}
-      />
+      {featureData.map((video, index) => {
+        let url = 'https://player.vimeo.com' + video.uri.replace('/videos/', '/video/')
+        return (
+          <div className={`player-wrapper ${index === current ? 'active' : ''}`}>
+            <ReactPlayer
+              key={index}
+              className='player'
+              url={url}
+              config={{
+                vimeo: {
+                  playerOptions: {
+                    background: true,
+                    quality: "720p",
+                    responsive: true,
+                    dnt: true,
+                    loop: true
+                  }
+                }
+              }}
+            />
+          </div>
+        )
+      })}
       <div className="cards">
-        {featureData.map((slide, index) => {
+        {featureData.map((card, index) => {
           return (
             <Card
-              title={slide.name}
-              // description={slide.description}
+              title={card.name}
               active={index === current}
               key={index}
             />

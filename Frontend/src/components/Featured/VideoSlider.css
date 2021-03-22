@@ -16,8 +16,19 @@
 }
 
 .player {
-  height: 115vh !important;
+  height: 100% !important;
   width: 100% !important;
+}
+
+.player-wrapper {
+  display: absolute;
+  width: 0;
+  height: 0;
+}
+
+.player-wrapper.active {
+  height: 115vh;
+  min-width: 100%;
 }
 
 figure h1 {
