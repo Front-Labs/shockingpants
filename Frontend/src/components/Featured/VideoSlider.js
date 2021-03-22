@@ -2,23 +2,19 @@ import { useState, useEffect } from "react"
 // import CardProgress from './Progress/CardProgress'
 import './VideoSlider.css'
 import Card from './Cards/Card'
-import Player from '@vimeo/player'
+import ReactPlayer from 'react-player/vimeo'
 
 export default function VideoSlider() {
-  const [player, setPlayer] = useState(null)
-  const [current, setCurrent] = useState(0)
+
   const [featureData, setFeatureData] = useState([])
+  const [videoId, setVideoId] = useState('')
+  const [current, setCurrent] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3001/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
-        setPlayer(new Player('player', {
-          id: featureData[0].uri.replace('/videos/', ''),
-          quality: "360p",
-          background: true,
-          responsive: true
-        }))
+        setVideoId('https://player.vimeo.com'+featureData[0].uri.replace('/videos/', '/video/'))
       }).catch(error => {
         console.log(error.message)
       })
@@ -27,24 +23,29 @@ export default function VideoSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(current === featureData.length - 1 ? 0 : current + 1)
+      setVideoId('https://player.vimeo.com'+featureData[current].uri.replace('/videos/', '/video/'))
     }, 5000);
     return () => clearInterval(interval)
   })
-
-  useEffect(() => {
-    if (player) {
-      player.loadVideo(featureData[current].uri.replace('/videos/', ''))
-    }
-  }, [current])
 
   return (
     <section id='slider'>
       <div className="logo-mark">
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
-
-      <div id="player"></div>
-
+      <ReactPlayer
+        className='player'
+        url={videoId}
+        config={{
+          vimeo: {
+            playerOptions: {
+              background: true,
+              quality: "360p",
+              responsive: true
+            }
+          }
+        }}
+      />
       <div className="cards">
         {featureData.map((slide, index) => {
           return (

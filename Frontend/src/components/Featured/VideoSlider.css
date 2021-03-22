@@ -15,9 +15,9 @@
     z-index: 1;
 }
 
-#player {
-  height: 105vh;
-  min-width: 100%;
+.player {
+  height: 115vh !important;
+  width: 100% !important;
 }
 
 figure h1 {
