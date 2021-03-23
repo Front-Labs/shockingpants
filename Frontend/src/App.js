@@ -1,12 +1,12 @@
 import Toggle from './components/Navbar/Toggle';
-import VideoSlider from './components/Featured/VideoSlider';
+import Featured from './components/Featured/Slider';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 
 function App() {
   return (
     <>
-      <VideoSlider />
+      <Featured />
       <Toggle />
       <Portfolio />
       <Contact />

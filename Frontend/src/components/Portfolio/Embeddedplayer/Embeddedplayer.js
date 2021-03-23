@@ -7,7 +7,7 @@ const EmbeddedPlayer = () => {
   url = url.replace('/videos/', '/video/')
 
   return (
-    <section id="embeddedplayer-container">
+    <section id="embeddedplayer">
       <a href="/#portfolio">
         <div className="times">
           <img src="images/times-circle-regular.svg" alt="times" />
