@@ -1,0 +1,39 @@
+#slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.logo-mark img {
+    position: absolute;
+    width: 8%;
+    height: auto;
+    top: 5%;
+    right: 4%;
+    z-index: 2;
+}
+
+.featured-item {
+  height: 0;
+  width: 0;
+}
+
+.featured-item.active {
+    height: 200% ;
+    width: 200% ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    height: 100% !important;
+    width: 100% !important;
+}

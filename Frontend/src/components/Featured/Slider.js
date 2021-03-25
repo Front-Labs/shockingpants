@@ -1,20 +1,17 @@
 import { useState, useEffect } from "react"
 // import CardProgress from './Progress/CardProgress'
-import './VideoSlider.css'
+import './Slider.css'
 import Card from './Cards/Card'
 import ReactPlayer from 'react-player/vimeo'
 
 export default function VideoSlider() {
   const [current, setCurrent] = useState(0)
   const [featureData, setFeatureData] = useState([])
-  // const [videoId, setVideoId] = useState('')
-
 
   useEffect(() => {
     fetch('http://localhost:3001/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
-        // setVideoId('https://player.vimeo.com' + featureData[0].uri.replace('/videos/', '/video/'))
       }).catch(error => {
         console.log(error.message)
       })
@@ -35,9 +32,8 @@ export default function VideoSlider() {
       {featureData.map((video, index) => {
         let url = 'https://player.vimeo.com' + video.uri.replace('/videos/', '/video/')
         return (
-          <div className={`player-wrapper ${index === current ? 'active' : ''}`}>
+          <div key={index} className={`featured-item ${index === current ? 'active' : ''}`}>
             <ReactPlayer
-              key={index}
               className='player'
               url={url}
               config={{
@@ -55,7 +51,7 @@ export default function VideoSlider() {
           </div>
         )
       })}
-      <div className="cards">
+      {/* <div className="cards"> */}
         {featureData.map((card, index) => {
           return (
             <Card
@@ -65,7 +61,7 @@ export default function VideoSlider() {
             />
           )
         })}
-      </div>
+      {/* </div> */}
     </section>
   )
 }

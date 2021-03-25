@@ -1,39 +1,12 @@
-#portfolio {
-    position: relative;
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .title {
-    display: flex;
     position: relative;
     height: 25vh;
-    flex-direction: column;  
-    justify-content: center;  
-    overflow: hidden;
-    /* width: 100vw; */
-    /* top: 0px; */
 }
 
 .title:hover {
     filter: grayscale(70%) hue-rotate(90deg);
     transition: 400ms ease-in-out;
     /* transition-timing-function: linear; */
-}
-
-.title a {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.3rem;
-    text-align: center;
-    text-decoration: none;
 }
 
 a:active, a:focus {
@@ -44,7 +17,13 @@ a:active, a:focus {
   }
 
 .glitch {
-    /* position: relative; */
+    font-size: 2.3rem;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
