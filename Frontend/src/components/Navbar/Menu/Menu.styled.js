@@ -5,11 +5,11 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: transparent;
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
   // ${({ theme }) => theme.primaryLight};
-  height: 75vh;
+  height: 100vh;
   text-align: left;
-  padding: 2rem;
+  padding: 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -23,11 +23,11 @@ export const StyledMenu = styled.nav`
   a {
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 3rem 0;
+    padding: 2rem;
     font-weight: 500;
     letter-spacing: 0.5rem;
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     list-style: none;
     // ${({ theme }) => theme.primaryDark};
     text-decoration: none;

@@ -3,29 +3,51 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 const studio = () => {
   return (
+  <div id="studio">
     <Splide
       options={ {
         type          : 'loop',
         autoplay      : true,
         speed         : 2000,
-        height        : '100vh',
+        height        : '110vh',
         arrows        : false,
         cover         : true,
         easing        : 'ease',
-        interval      : 5000,
+        interval      : 3000,
         drag          : false,
         pagination    : false,   
         pauseOnHover  : false,
+        pauseOnFocus  : false,
         keyboard      : false
       } }
+      hasSliderWrapper
     >
       <SplideSlide>
-        <img src="images/contact.jpg" alt="SEO" />
+        <div style={{
+          background:'purple',
+            height: '100%',
+            width:'100%'
+        }}></div>
       </SplideSlide>
+
       <SplideSlide>
-        <img src="images/contact2.jpg" alt="SEO" />
+      <div style={{
+        background: 'orange',
+        height: '100%',
+        width:'100%'
+        }}></div>
       </SplideSlide>
+
+      <SplideSlide>
+      <div style={{
+        background: 'blue',
+        height: '100%',
+        width:'100%'
+        }}></div>
+      </SplideSlide>
+
     </Splide>
+    </div>
   )
 }
 

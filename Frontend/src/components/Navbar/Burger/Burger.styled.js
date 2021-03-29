@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
   position: absolute;
-  top: 5%;
-  left: 2rem;
+  top: 3rem;
+  left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
   height: 2rem;
   background: transparent;
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
+  opacity: 0.8;
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 2;
 
   &:focus {
     outline: none;
@@ -29,11 +30,11 @@ export const StyledBurger = styled.button`
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-    mix-blend-mode: difference;
+    // mix-blend-mode: difference;
 
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
-      mix-blend-mode: difference;
+      // mix-blend-mode: difference;
     }
 
     :nth-child(2) {
@@ -44,7 +45,7 @@ export const StyledBurger = styled.button`
 
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-      mix-blend-mode: difference;
+      // mix-blend-mode: difference;
     }
   }
 `;

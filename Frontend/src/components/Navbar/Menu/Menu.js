@@ -8,33 +8,33 @@ const Menu = ({ open, setOpen }) => {
 
       <motion.a href="#portfolio"
         whileHover={{ 
-        scale: 1.4,
+        scale: 1.3,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
-        transition={{ type: 'spring', stiffness: 120 }}
+        transition={{ type: 'spring', stiffness: 100 }}
       >
         Work
       </motion.a>
 
       <motion.a href="#studio"
         whileHover={{ 
-        scale: 1.4,
+        scale: 1.3,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
-        transition={{ type: 'spring', stiffness: 120 }}
+        transition={{ type: 'spring', stiffness: 100 }}
       >
         Studio
       </motion.a>
 
       <motion.a href="#contact"
         whileHover={{ 
-        scale: 1.4,
+        scale: 1.3,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
-        transition={{ type: 'spring', stiffness: 120 }}
+        transition={{ type: 'spring', stiffness: 100 }}
       >
         About Me
       </motion.a>
