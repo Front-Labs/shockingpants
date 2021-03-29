@@ -1,9 +1,10 @@
 #slider {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 110vh;
+    width: 100vw;
     background-color: #000000;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* margin-bottom: 5vh; */
 }
 
 .logo-mark img {
@@ -16,24 +17,13 @@
 }
 
 .featured-item {
-  height: 0;
-  width: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 .featured-item.active {
-    height: 200% ;
-    width: 200% ;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.player {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-    height: 100% !important;
-    width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

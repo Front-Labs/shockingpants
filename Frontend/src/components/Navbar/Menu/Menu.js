@@ -1,8 +1,6 @@
-import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 import { motion } from 'framer-motion';
-// import { Link } from 'react-router-dom';
 
 const Menu = ({ open, setOpen }) => {
   return (
@@ -19,7 +17,7 @@ const Menu = ({ open, setOpen }) => {
         Work
       </motion.a>
 
-      {/* <motion.a href="#about"
+      <motion.a href="#studio"
         whileHover={{ 
         scale: 1.4,
         originX: 0,
@@ -27,8 +25,8 @@ const Menu = ({ open, setOpen }) => {
         }}
         transition={{ type: 'spring', stiffness: 120 }}
       >
-        Me
-      </motion.a> */}
+        Studio
+      </motion.a>
 
       <motion.a href="#contact"
         whileHover={{ 
@@ -38,7 +36,7 @@ const Menu = ({ open, setOpen }) => {
         }}
         transition={{ type: 'spring', stiffness: 120 }}
       >
-        Contact
+        About Me
       </motion.a>
     </StyledMenu>
   )
