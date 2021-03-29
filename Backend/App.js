@@ -30,7 +30,7 @@ app.get("/featured", (req, res) => {
 app.get("/portfolio", (req, res) => {
   client.request({
     method: 'GET',
-    path: '/me/projects/3869831/videos?fields=name,uri,pictures.sizes.link',
+    path: '/me/projects/3869831/videos?fields=name,uri,description,pictures.sizes.link',
   }, function (error, body, status_code, headers) {
     if (error) {
       console.log(error);

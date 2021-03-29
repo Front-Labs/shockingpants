@@ -42,7 +42,6 @@ export default function VideoSlider() {
 									playerOptions: {
 										background: true,
 										quality: "720p",
-										// responsive: true,
 										dnt: true,
 										loop: true
 									}

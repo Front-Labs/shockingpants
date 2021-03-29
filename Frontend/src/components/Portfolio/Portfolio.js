@@ -27,7 +27,11 @@ export default function Portfolio() {
             }}>
             <Link to={{
               pathname:   "/embeddedplayer",
-              state:      { link : `${video.uri}` }
+              state:      {
+                link : `${video.uri}`,
+                title: `${video.name}`,
+                description: `${video.description}`
+              }
             }} className="glitch">
               <span aria-hidden="true">{video.name}</span>
               {video.name}
