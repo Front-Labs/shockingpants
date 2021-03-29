@@ -3,16 +3,17 @@
     height: 110vh;
     width: 100vw;
     background-color: #000000;
-    /* overflow: hidden; */
-    /* margin-bottom: 5vh; */
+}
+.logo-mark {
+  mix-blend-mode: difference;
 }
 
 .logo-mark img {
     position: absolute;
-    width: 8%;
+    width: 10%;
     height: auto;
-    top: 5%;
-    right: 4%;
+    top: 2rem;
+    right: 3rem;
     z-index: 2;
 }
 
