@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './Portfolio.css'
+import './portfolio.css'
 
 export default function Portfolio() {
   const [portfolioData, setPortfolioData] = useState([])
@@ -14,12 +14,12 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <section id="portfolio" className="portfolio-page" >
+    <section id="portfolio">
       {portfolioData.map((video, index) => {
         return (
           <div
             key={index}
-            className="title"
+            className="project"
             style={{
               backgroundImage: `url(${video.pictures.sizes[5].link})`,
               backgroundSize: "cover",

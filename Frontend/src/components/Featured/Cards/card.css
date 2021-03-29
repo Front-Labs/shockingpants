@@ -1,0 +1,17 @@
+.card{
+  display: none;
+}
+
+.card.active {
+  display: flex;
+  position: absolute;
+  color: white;
+  bottom: 15%;
+  right: 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-right: 1rem;
+}

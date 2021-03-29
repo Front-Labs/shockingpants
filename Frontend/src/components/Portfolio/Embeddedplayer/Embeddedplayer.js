@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom"
-import './Embeddedplayer.css'
+import './embeddedplayer.css'
 
 const EmbeddedPlayer = () => {
   const location = useLocation()
@@ -20,6 +20,10 @@ const EmbeddedPlayer = () => {
         frameborder="0"
         allowfullscreen
       ></iframe>
+      <div className="player-text">
+        <p>title</p>
+        <p>description</p>
+      </div>
     </section>
   );
 }

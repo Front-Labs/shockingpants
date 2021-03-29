@@ -1,9 +1,9 @@
-.title {
+.project {
     position: relative;
     height: 25vh;
 }
 
-.title:hover {
+.project:hover {
     filter: grayscale(70%) hue-rotate(90deg);
     transition: 400ms ease-in-out;
     /* transition-timing-function: linear; */
