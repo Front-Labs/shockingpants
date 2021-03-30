@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import './Slider.css'
+import './slider.css'
 import Card from './Cards/Card'
 import ReactPlayer from 'react-player/vimeo'
 
