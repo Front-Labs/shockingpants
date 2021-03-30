@@ -1,6 +1,13 @@
 project directory, run:
+
+### `yarn install`
+Installs BE & FE dependancies
+
 ### `nodemon server`
+runs BE server
+
 ### `yarn start`
+runs FE server
 
 Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
