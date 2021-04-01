@@ -1,5 +1,5 @@
 import { CircularProgress } from '@material-ui/core'
-import './card.css'
+import './card.scss'
 
 export default function Card({ active, title, progress }) {
 

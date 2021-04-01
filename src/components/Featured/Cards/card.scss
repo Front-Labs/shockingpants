@@ -1,7 +1,6 @@
-.card{
-  display: none;
+.card {
+  display: none; 
 }
-
 .card.active {
   display: flex;
   position: absolute;
@@ -13,6 +12,7 @@
   justify-content: right;
   opacity: 0.8;
 }
+
 
 h3 {
   margin-right: 2rem;

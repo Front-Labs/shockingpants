@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import { Route, BrowserRouter } from 'react-router-dom'
 import EmbeddedPlayer from './components/Portfolio/Embeddedplayer/Embeddedplayer';

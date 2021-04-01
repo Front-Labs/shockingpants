@@ -1,20 +1,20 @@
-#slider {
-    position: relative;
-    height: 110vh;
-    width: 100vw;
-    background-color: #000000;
-}
-.logo-mark {
-  mix-blend-mode: difference;
+#featured {
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  background-color: #000000;
 }
 
-.logo-mark img {
+.logo {
+  mix-blend-mode: difference;
+    img {
     position: absolute;
     width: 10%;
     height: auto;
     top: 2rem;
     right: 3rem;
     z-index: 2;
+  }
 }
 
 .featured-item {

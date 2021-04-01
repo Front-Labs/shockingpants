@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom"
-import './embeddedplayer.css'
+import './embeddedplayer.scss'
 
 const EmbeddedPlayer = () => {
   const location = useLocation()

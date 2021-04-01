@@ -5,12 +5,12 @@
   }
 
 .times img {
-    position: absolute;
-    height: auto;
-    width: 3vw;
-    top: 5%;
-    right: 4%;
-    filter: invert(1);
+  position: absolute;
+  height: auto;
+  width: 3vw;
+  top: 5%;
+  right: 4%;
+  filter: invert(1);
 }
 
 .embedded-player {
@@ -22,14 +22,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.embedded-player iframe {
+  iframe {
     width: 60%;
     height: 100%;
     list-style-type: none;
-}
-
-.embedded-player .player-text {
-  width: 30%;
+  }
+  .player-text {
+    width: 30%;
+  }
 }
