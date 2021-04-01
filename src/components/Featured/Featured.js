@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import './slider.css'
+import './featured.scss'
 import Card from './Cards/Card'
 import ReactPlayer from 'react-player/vimeo'
 
-export default function VideoSlider() {
+export default function Featured() {
   const [current, setCurrent] = useState(0)
   const [featureData, setFeatureData] = useState([])
   const [progress, setProgress] = useState(0)
@@ -29,8 +29,8 @@ export default function VideoSlider() {
   })
 
   return (
-    <section id='slider'>
-      <div className="logo-mark">
+    <section id='featured'>
+      <div className="logo">
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
       {featureData.map((video, index) => {

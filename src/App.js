@@ -1,5 +1,5 @@
+import Featured from './components/Featured/Featured';
 import Toggle from './components/Navbar/Toggle';
-import Featured from './components/Featured/Slider';
 import Portfolio from './components/Portfolio/Portfolio';
 import Studio from './components/Studio/Studio';
 import Contact from './components/Contact/Contact';

@@ -1,5 +1,5 @@
 import React from "react"
-import './contact.css'
+import './contact.scss'
 
 const Contact = () => {
   
@@ -30,7 +30,7 @@ const Contact = () => {
         </li>
       </ul>
 
-      <a href="#slider">
+      <a href="#featured">
         <div className="arrow">
           <span></span>
           <span></span>
