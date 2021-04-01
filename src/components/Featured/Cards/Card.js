@@ -1,16 +1,16 @@
 import { CircularProgress } from '@material-ui/core'
 import './card.css'
 
-const Card = (props) => {
+export default function Card({ active, title, progress }) {
+
   return (
-    <div className={`card ${props.active ? 'active' : ''}`}>
-      <h3>{props.title}</h3>
+    <div className={`card ${active ? 'active' : ''}`}>
+      <h3>{title}</h3>
       <CircularProgress
-        variant="indeterminate" 
-        // value="75"
-        color="white"
+        variant="determinate"
+        value={progress}
+        color="secondary"
       />
     </div >
   )
 }
-export default Card

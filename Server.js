@@ -1,12 +1,12 @@
 require('dotenv').config()
 
-const express = require("express");
-const cors = require("cors");
+const express = require("express")
+const cors = require("cors")
 
-const port = process.env.PORT || 3001;
-const app = express();
+const port = process.env.PORT || 3001
+const app = express()
 
-app.use(cors());
+app.use(cors())
 
 let Vimeo = require('vimeo').Vimeo;
   let client = new Vimeo(
@@ -22,7 +22,7 @@ app.get("/featured", (req, res) => {
     path: '/me/projects/3933356/videos?fields=name,uri,pictures.sizes.link',
   }, function (error, body, status_code, headers) {
     if (error) {
-      console.log(error);
+      console.log(error)
     }
     res.send(body.data)
   });
@@ -35,12 +35,12 @@ app.get("/portfolio", (req, res) => {
     path: '/me/projects/3869831/videos?fields=name,uri,description,pictures.sizes.link',
   }, function (error, body, status_code, headers) {
     if (error) {
-      console.log(error);
+      console.log(error)
     }
     res.send(body.data)
   });
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`)
 });
