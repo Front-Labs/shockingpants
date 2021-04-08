@@ -1,18 +1,17 @@
 .card {
-  display: none; 
+  display: none;
 }
+
 .card.active {
   display: flex;
   position: absolute;
   color: white;
   bottom: 15%;
   right: 5%;
-  /* width: 50%; */
   align-items: center;
   justify-content: right;
   opacity: 0.8;
 }
-
 
 h3 {
   margin-right: 2rem;
