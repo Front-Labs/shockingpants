@@ -32,7 +32,7 @@ p {
   color: white;
   font-size: 2.5rem;
   /* font-style: italic; */
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 .contact-buttons {
@@ -64,12 +64,6 @@ p {
   opacity: 1;
   transition: 400ms ease-in-out;
 }
-
-
-
-
-
-
 
 /* #contact-col {
   width: 32%;
@@ -106,25 +100,24 @@ p {
   animation: animate 2.5s infinite;
 }
 
-.arrow span:nth-child(2){
+.arrow span:nth-child(2) {
   animation-delay: -0.2s;
 }
 
-.arrow span:nth-child(3){
+.arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
 
 @keyframes animate {
-  0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
   }
-  50%{
-      opacity: 1;
+  50% {
+    opacity: 1;
   }
-  100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
-
