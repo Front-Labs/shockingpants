@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" style={{
       backgroundImage: "url(images/contact2.jpg)"
     }}>
-      {/* <Modal
+      <Modal
         quote="Worlds finest editor!"
         popup="I am the worlds finest editor, no doubt about it"
       />
@@ -18,17 +18,7 @@ const Contact = () => {
       <Modal
         quote="Quality production for TV"
         popup="Only the highest quality, no doubt about it"
-      /> */}
-      <div className="quote">
-        <h3>"Worlds finest editor!"</h3>
-      </div>
-      <div className="quote">
-        <h3>"Excellent original content"</h3>
-      </div>
-      <div className="quote">
-        <h3>"Quality production for TV"</h3>
-      </div>
-
+      />
       <ul className="contact-buttons">
         <li>
           <a href="https://vimeo.com/postmark" target="_blank" rel="noreferrer">
