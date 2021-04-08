@@ -1,15 +1,32 @@
-import React from "react"
 import './contact.scss'
+import Modal from './Modal'
 
 const Contact = () => {
-  
+
   return (
-    <section id="contact">
+    <section id="contact" style={{
+      backgroundImage: "url(images/contact2.jpg)"
+    }}>
+      {/* <Modal
+        quote="Worlds finest editor!"
+        popup="I am the worlds finest editor, no doubt about it"
+      />
+      <Modal
+        quote="Excellent original content"
+        popup="I am the most original content creator, no doubt about it"
+      />
+      <Modal
+        quote="Quality production for TV"
+        popup="Only the highest quality, no doubt about it"
+      /> */}
       <div className="quote">
-        <p>"Editor is what I am"</p>
+        <h3>"Worlds finest editor!"</h3>
       </div>
-      <div className="quote2">
-        <p>"for tv, film and commercials"</p>
+      <div className="quote">
+        <h3>"Excellent original content"</h3>
+      </div>
+      <div className="quote">
+        <h3>"Quality production for TV"</h3>
       </div>
 
       <ul className="contact-buttons">
@@ -19,12 +36,12 @@ const Contact = () => {
           </a>
         </li>
         <li>
-        <a href="https://www.linkedin.com/in/mark-schokkenbroek-78169541/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/mark-schokkenbroek-78169541/" target="_blank" rel="noreferrer">
             <img src="images/linkedin.svg" alt="linkedin" />
           </a>
         </li>
         <li>
-        <a href="https://goo.gl/maps/ho1xhrgE9cPNo5Ei8" target="_blank" rel="noreferrer">
+          <a href="https://goo.gl/maps/ho1xhrgE9cPNo5Ei8" target="_blank" rel="noreferrer">
             <img src="images/map-marker.svg" alt="map-marker" />
           </a>
         </li>
