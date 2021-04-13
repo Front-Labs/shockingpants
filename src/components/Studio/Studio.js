@@ -25,24 +25,32 @@ const studio = () => {
         hasSliderWrapper
       >
         <SplideSlide>
-          <div class="slide" style={{
-            background: 'purple',
+          <div className="slide" style={{
+            backgroundImage: "url(images/couch.jpeg)",
           }}>
             <h3>Slide 1</h3>
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div class="slide" style={{
-            background: 'orange',
+          <div className="slide" style={{
+            backgroundImage: "url(images/edit-suite.jpeg)",
           }}>
             <h3>Slide 2</h3>
           </div>
         </SplideSlide>
 
         <SplideSlide>
-          <div class="slide" style={{
-            background: 'blue',
+          <div className="slide" style={{
+            backgroundImage: "url(images/long-table.jpeg)",
+          }}>
+            <h3>Slide 3</h3>
+          </div>
+        </SplideSlide>
+
+        <SplideSlide>
+          <div className="slide" style={{
+            backgroundImage: "url(images/red-wall.jpeg)",
           }}>
             <h3>Slide 3</h3>
           </div>
