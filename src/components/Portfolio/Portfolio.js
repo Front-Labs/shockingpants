@@ -5,7 +5,7 @@ import './portfolio.scss'
 export default function Portfolio() {
   const [portfolioData, setPortfolioData] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3001/portfolio').then(response => response.json())
+    fetch('http://postmark.nl:3001/portfolio').then(response => response.json())
       .then(portfolioData => {
         setPortfolioData(portfolioData)
       }).catch(error => {

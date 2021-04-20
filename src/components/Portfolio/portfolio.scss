@@ -8,8 +8,7 @@
   transition: 400ms ease-in-out;
 }
 
-a:active,
-a:focus {
+a:active, a:focus {
   outline: none;
   -moz-outline-style: none;
   outline-style: none;
