@@ -1,5 +1,5 @@
 import { bool } from 'prop-types';
-import { StyledMenu } from './Menu.styled';
+import { StyledMenu } from './Styled';
 import { motion } from 'framer-motion';
 
 const Menu = ({ open, setOpen }) => {
