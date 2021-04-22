@@ -9,7 +9,7 @@ export default function Featured() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    fetch('http://postmark.nl:3001/featured').then(response => response.json())
+    fetch('http://www.postmark.nl:3001/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
       }).catch(error => {
@@ -21,7 +21,7 @@ export default function Featured() {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress(progress + 1)
-      if ((progress + 1) % 101 === 0) {
+      if ((progress + 1) % 100 === 0) {
         setCurrent(current === featureData.length - 1 ? 0 : current + 1)
       }
     }, 100)
