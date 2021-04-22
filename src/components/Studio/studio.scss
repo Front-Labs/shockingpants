@@ -1,10 +1,29 @@
+#studio {
+  position: relative;
+  height: 125vh;
+  h1 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: white;
+    z-index: 1;
+  }
+}
+
 .slide {
   height: 100%;
-  width: 100%;
-  background-repeat: round;
-  h3 {
+  background-size: 100%;
+  background-position-y: center;
+  .slide-txt {
+    color: white;
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    top: 40%;
+    left: 35%;
   }
+}
+
+.splide__pagination {
+    bottom: 3em;
+    justify-content: flex-start;
+    transform: translateX(-45%);
 }

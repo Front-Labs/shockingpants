@@ -21,7 +21,7 @@ export default function Featured() {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress(progress + 1)
-      if ((progress + 1) % 101 === 0) {
+      if ((progress + 1) % 100 === 0) {
         setCurrent(current === featureData.length - 1 ? 0 : current + 1)
       }
     }, 100)

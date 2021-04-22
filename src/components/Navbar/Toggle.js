@@ -2,9 +2,7 @@ import { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
-import Burger  from './Burger.js';
-import Menu  from './Menu.js';
-
+import { Burger, Menu } from '..';
 import useOnClickOutside from './UseOnClickOutside'
 
 function Toggle() {
@@ -17,7 +15,7 @@ function Toggle() {
           <div ref={ref}>
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
-          </div>
+        </div>
       </ThemeProvider>
     );
   }

@@ -1,18 +1,24 @@
 .card {
-  display: none;
+  visibility: hidden;
 }
 
 .card.active {
-  display: flex;
+  visibility: visible;
   position: absolute;
   color: white;
   bottom: 15%;
   right: 5%;
-  align-items: center;
-  justify-content: right;
   opacity: 0.8;
-}
-
-h3 {
-  margin-right: 2rem;
+  h3 {
+    transform: translate(-75px, -25%);
+  }
+  .MuiCircularProgress-root {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .MuiCircularProgress-svg {
+    color: orange;
+    opacity: 0.2;
+  }
 }

@@ -9,7 +9,8 @@ export default function Card({ active, title, progress }) {
       <CircularProgress
         variant="determinate"
         value={progress}
-        color="secondary"
+        size={100}
+        thickness={3}
       />
     </div >
   )
