@@ -1,51 +1,74 @@
 import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
   height: 2rem;
   background: transparent;
-  // mix-blend-mode: difference;
   opacity: 0.8;
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 2;
 
   &:focus {
     outline: none;
   }
 
+  @media screen and (max-width: 2000px) {
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  
+
+
   div {
-    width: 2rem;
-    height: 0.25rem;
     background: white;
-    // ${({ theme, open }) => open ? theme.primaryDark : theme.primaryLight};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-    // mix-blend-mode: difference;
 
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
-      // mix-blend-mode: difference;
     }
 
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
-      mix-blend-mode: difference;
     }
 
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-      // mix-blend-mode: difference;
+    }
+
+    @media screen and (max-width: 2000px) {
+      width: 2rem;
+      height: 0.25rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 2.5rem;
+      height: 0.35rem;
+    }
+
+    @media screen and (max-width: 400px) {
+
     }
   }
 `;
