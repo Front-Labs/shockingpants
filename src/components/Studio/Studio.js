@@ -7,6 +7,9 @@ const studio = () => {
     <section id="studio">Î
       <div className="studio-logo">
         <img
+          src="images/logo-bar-black.png"
+          alt="logo" />
+        <img
           src="images/logo-bar-white.png"
           className="flicker-image"
           alt="logo" />
