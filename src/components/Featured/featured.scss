@@ -1,14 +1,12 @@
 #featured {
   position: relative;
   height: 110vh;
-  width: 100vw;
   background-color: #000000;
 }
 
 .featured-item {
   display: none;
   height: 100%;
-  width: 100%;
 }
 
 .featured-item.active {
@@ -17,38 +15,31 @@
   justify-content: center;
 }
 
+.logo {
+  mix-blend-mode: difference;
+  img {
+    position: absolute;
+  }
+}
+
 @media screen and (max-width: 2000px) {
-  .logo {
-    mix-blend-mode: difference;
-    img {
-      position: absolute;
-      width: 10%;
-      height: auto;
-      top: 2rem;
-      right: 3rem;
-      z-index: 2;
-    }
+  .logo img {
+    width: 10%;
+    top: 2rem;
+    right: 3rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .logo img {
-    position: absolute;
     width: 15%;
-    z-index: 2;
-    height: auto;
   }
 }
 
 @media screen and (max-width: 400px) {
   .logo img {
-    position: absolute;
     right: 1.5rem;
     top: 1.5rem;
     width: 20%;
-    z-index: 2;
-    height: auto;
   }
 }
-
-

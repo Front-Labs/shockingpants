@@ -2,7 +2,8 @@ import { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../global';
 import { theme } from '../theme';
-import { Burger, Menu } from '..';
+import Burger from './Burger';
+import Menu from './Menu';
 import useOnClickOutside from './UseOnClickOutside'
 
 function Toggle() {
