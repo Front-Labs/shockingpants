@@ -4,21 +4,22 @@ import './studio.scss'
 
 const studio = () => {
   return (
-    <section id="studio">Î
+    <section id="studio">
       <div className="studio-logo">
         <img
           src="images/logo-bar-black.png"
-          alt="logo" />
+          alt="logo"
+        />
         <img
           src="images/logo-bar-white.png"
           className="flicker-image"
-          alt="logo" />
+          alt="logo"
+        />
         <img
           src="images/logo-bar-white.png"
           className="flicker-image-alternate"
           alt="logo"
         />
-
       </div>
       <Splide
         options={{
