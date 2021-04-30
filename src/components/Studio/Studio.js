@@ -5,22 +5,6 @@ import './studio.scss'
 const studio = () => {
   return (
     <section id="studio">
-      <div className="studio-logo">
-        <img
-          src="images/logo-bar-black.png"
-          alt="logo"
-        />
-        <img
-          src="images/logo-bar-white.png"
-          className="flicker-image"
-          alt="logo"
-        />
-        <img
-          src="images/logo-bar-white.png"
-          className="flicker-image-alternate"
-          alt="logo"
-        />
-      </div>
       <Splide
         options={{
           height: '125vh',
