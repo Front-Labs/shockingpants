@@ -1,13 +1,6 @@
 #studio {
   position: relative;
   height: 125vh;
-  h1 {
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    color: white;
-    z-index: 1;
-  }
 }
 
 .slide {
@@ -15,15 +8,74 @@
   background-size: 100%;
   background-position-y: center;
   .slide-txt {
+    display: flex;
+    flex-direction: column;
     color: white;
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 50%;
+    right: 6rem;
+    font-family: monospace;
   }
 }
 
 .splide__pagination {
-    bottom: 3em;
-    justify-content: flex-start;
-    transform: translateX(-45%);
+  bottom: 3em;
+  justify-content: flex-start;
+  transform: translateX(-45%);
+}
+
+.studio-logo {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 10%;
+  left: 4rem;
+  z-index: 1;
+  cursor: pointer;
+  img {
+    position: absolute;
+    width: 100%;
+  }
+  .flicker-image {
+    animation: flicker 700ms alternate infinite;
+  }
+  .flicker-image-alternate {
+    animation: flicker 600ms alternate infinite;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+      opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
 }
