@@ -19,22 +19,21 @@ export const StyledBurger = styled.button`
   @media screen and (max-width: 2000px) {
     position: absolute;
     top: 2.5rem;
-    left: 3rem;
+    right: 3rem;
   }
 
   @media screen and (max-width: 1024px) {
     position: absolute;
     top: 2.5rem;
-    left: 3rem;
+    right: 3rem;
   }
 
   @media screen and (max-width: 400px) {
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     top: 2rem;
-    left: 2rem;
+    right: 2rem;
   }
-
-  
 
 
   div {
@@ -45,7 +44,7 @@ export const StyledBurger = styled.button`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(50deg)' : 'rotate(0)'};
     }
 
     :nth-child(2) {
@@ -54,7 +53,7 @@ export const StyledBurger = styled.button`
     }
 
     :nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(-50deg)' : 'rotate(0)'};
     }
 
     @media screen and (max-width: 2000px) {
@@ -68,29 +67,42 @@ export const StyledBurger = styled.button`
     }
 
     @media screen and (max-width: 400px) {
-
+      width: 1.9rem;
+      height: 0.35rem;
     }
   }
 `;
 
 export const StyledMenu = styled.nav`
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: transparent;
-  // mix-blend-mode: difference;
-  // ${({ theme }) => theme.primaryLight};
   height: 100vh;
-  text-align: left;
   padding: 4rem;
-  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  // transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+
+  @media screen and (max-width: 2000px) {
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+  }
+
+  @media screen and (max-width: 1024px) {
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    height: 50vh;
     width: 100%;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 400px) {
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    height: 50vh;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
   }
 
   a {
@@ -102,19 +114,23 @@ export const StyledMenu = styled.nav`
     color: white;
     opacity: 0.8;
     list-style: none;
-    // ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
-    
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+
+    @media screen and (max-width: 1024px) {
       font-size: 1.5rem;
       text-align: center;
+      padding: 1.3rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 1rem;
+      text-align: center;
+      padding: 1.3rem;
     }
 
     &:hover {
       opacity: 1;
-    //   transition: 400ms;
-    //   // ${({ theme }) => theme.primaryHover};
     }
   }
 `;

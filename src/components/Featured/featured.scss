@@ -24,22 +24,28 @@
 
 @media screen and (max-width: 2000px) {
   .logo img {
+    mix-blend-mode: difference;
+    position: absolute;
     width: 10%;
     top: 2rem;
-    right: 3rem;
+    left: 3rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .logo img {
+    position: absolute;
     width: 15%;
   }
 }
 
 @media screen and (max-width: 400px) {
   .logo img {
-    right: 1.5rem;
-    top: 1.5rem;
+    position: fixed;
+    z-index: 4;
+    left: 2rem;
+    top: 1.7rem;
     width: 20%;
+    mix-blend-mode: normal;
   }
 }
