@@ -1,44 +1,44 @@
 #contact {
-  // display: flex;
-  // flex-direction: column;
-  height: 300vh;
+  height: 500vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .quote {
-  position: sticky;
+  padding-top: 100vh;
+  position: absolute;
+  height: 150vh;
+  left: 10%;
   h3 {
+    position: sticky;
+    top: 30vh;
     color: white;
     font-size: 2rem;
     font-family: "Bangers", cursive;
   }
 }
-.quote.top{
-  top: 20vh;
-//   h3 {
-//   transform: translate(0, 50vh);
-//   }
+.quote.top {
+  top: 0;
 }
-.quote.mid{
-  top: 40vh;
-//   h3 {
-//   transform: translate(0, 100vh);
-//   }
+.quote.mid {
+  top: 150vh;
 }
-.quote.low{
-  top: 60vh;
-  // h3 {
-  // transform: translate(0, 150vh);
-  // }
+.quote.low {
+  top: 300vh;
 }
 
 .contact-buttons {
-  position: sticky;
-  top: 85vh;
-  // padding-top: 90vh;
+  position: absolute;
+  padding-top: 85vh;
+  height: 100%;
+  right: 5%;
+  ul {
+    position: sticky;
+    top: 85vh;
+  }
   li {
     float: right;
     margin-right: 30px;
@@ -61,19 +61,17 @@
 }
 
 .arrow {
-  position: sticky;
-  top: 85vh;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   transform: translate(-50%) rotate(180deg);
-  // padding-top: 90vh;
   span {
     display: block;
     width: 25px;
     height: 25px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    margin: -10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     animation: buttonbounce 2.5s infinite;
-    transform: rotate(45deg);
   }
   span:nth-child(2) {
     animation-delay: -0.1s;
