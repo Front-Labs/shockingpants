@@ -5,7 +5,22 @@ import './studio.scss'
 const studio = () => {
   return (
     <section id="studio">
-      <h1>The Studio</h1>
+      <div className="studio-logo">
+        <img
+          src="images/logo-bar-black.png"
+          alt="logo"
+        />
+        <img
+          src="images/logo-bar-white.png"
+          className="flicker-image"
+          alt="logo"
+        />
+        <img
+          src="images/logo-bar-white.png"
+          className="flicker-image-alternate"
+          alt="logo"
+        />
+      </div>
       <Splide
         options={{
           height: '125vh',
@@ -29,8 +44,12 @@ const studio = () => {
             backgroundImage: "url(images/couch.jpeg)",
           }}>
             <div className="slide-txt">
-              <h4>Slide 1 info and description</h4>
-              <h5>additional details</h5>
+              <h2>Couch of Success</h2>
+              <h4>
+                I brainstorm my finest ideas on the couch of success
+                <br></br>
+                The postmark team collobates here daily
+              </h4>
             </div>
           </div>
         </SplideSlide>
@@ -40,8 +59,12 @@ const studio = () => {
             backgroundImage: "url(images/edit-suite.jpeg)",
           }}>
             <div className="slide-txt">
-              <h4>Slide 2 info and description</h4>
-              <h5>additional details</h5>
+              <h2>Edit Suite</h2>
+              <h4>
+                Where the magic happens
+                <br></br>
+                All the best tools Logic, Premiere for the best product
+              </h4>
             </div>
           </div>
         </SplideSlide>
@@ -51,8 +74,12 @@ const studio = () => {
             backgroundImage: "url(images/long-table.jpeg)",
           }}>
             <div className="slide-txt">
-              <h4>Slide 3 info and description</h4>
-              <h5>additional details</h5>
+              <h2>Board Room</h2>
+              <h4>
+                The core of Postmark
+                <br></br>
+                Multimillion deals start and finish right here
+              </h4>
             </div>
           </div>
         </SplideSlide>
@@ -62,14 +89,18 @@ const studio = () => {
             backgroundImage: "url(images/red-wall.jpeg)",
           }}>
             <div className="slide-txt">
-              <h4>Slide 4 info and description</h4>
-              <h5>additional details</h5>
+              <h2>Style and Substance</h2>
+              <h4>
+                Whatever you need we have it in spades
+                <br></br>
+                Bags of Style and Bags of Substance ;)
+              </h4>
             </div>
           </div>
         </SplideSlide>
 
       </Splide>
-    </section>
+    </section >
   )
 }
 

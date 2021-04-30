@@ -1,20 +1,25 @@
 #featured {
   position: relative;
   height: 110vh;
-  width: 100vw;
   background-color: #000000;
 }
 
 .featured-item {
   display: none;
   height: 100%;
-  width: 100%;
 }
 
 .featured-item.active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  mix-blend-mode: difference;
+  img {
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 2000px) {
@@ -44,5 +49,3 @@
     mix-blend-mode: normal;
   }
 }
-
-
