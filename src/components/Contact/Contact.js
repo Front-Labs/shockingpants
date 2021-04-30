@@ -1,12 +1,10 @@
 import './contact.scss'
 
 const Contact = () => {
-
   return (
     <section id="contact" style={{
       backgroundImage: "url(images/contact2.jpg)"
     }}>
-
       <div className="quote top">
         <h3>'Mark is a skilled pitch editor'</h3>
       </div>
@@ -16,7 +14,6 @@ const Contact = () => {
       <div className="quote low">
         <h3>'Editor with an eye for detail'</h3>
       </div>
-
       <div className="contact-buttons">
         <ul>
           <li>
@@ -36,7 +33,6 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-
       <a href="#featured">
         <div className="arrow">
           <span></span>
@@ -44,7 +40,6 @@ const Contact = () => {
           <span></span>
         </div>
       </a>
-
     </section>
   )
 }
