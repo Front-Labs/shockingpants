@@ -1,5 +1,4 @@
 import './contact.scss'
-import Modal from './Modal'
 
 const Contact = () => {
 
@@ -7,18 +6,7 @@ const Contact = () => {
     <section id="contact" style={{
       backgroundImage: "url(images/contact2.jpg)"
     }}>
-      <Modal
-        quote="'Mark is a skilled pitch editor'"
-        popup="He makes something out of nothing, give him a script and he will create a dope video for your pitch"
-      />
-      <Modal
-        quote="'I am a real family man'"
-        popup="I'm blessed with a beautful wife and two wonderful kids, they laugh at me 'cause I'm convinced aliens visit earth on regular basis"
-      />
-      <Modal
-        quote="'Editor with an eye for detail'"
-        popup="Mark has a good feel for pace, dynamics and spinning a story'"
-      />
+
       <ul className="contact-buttons">
         <li>
           <a href="https://vimeo.com/postmark" target="_blank" rel="noreferrer">
@@ -37,6 +25,16 @@ const Contact = () => {
         </li>
       </ul>
 
+      <div className="quote top">
+        <h3>'Mark is a skilled pitch editor'</h3>
+      </div>
+      <div className="quote mid">
+        <h3>'I'm a real family man'</h3>
+      </div>
+      <div className="quote low">
+        <h3>'Editor with an eye for detail'</h3>
+      </div>
+
       <a href="#featured">
         <div className="arrow">
           <span></span>
@@ -44,8 +42,7 @@ const Contact = () => {
           <span></span>
         </div>
       </a>
-      <div className="contact-background" id="contact-bw" style={{ backgroundImage: "url(images/contact2.jpg)" }}></div>
-      {/* <div className="contact-background" id="contact-col" style={{ backgroundImage: "url(images/contact.jpg)" }}></div> */}
+
     </section>
   )
 }
