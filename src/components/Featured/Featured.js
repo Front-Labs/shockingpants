@@ -30,9 +30,6 @@ export default function Featured() {
 
   return (
     <section id='featured'>
-      <div className="logo">
-        <img src="images/Post-Mark.png" alt="logo" />
-      </div>
       {featureData.map((video, index) => {
         let url = 'https://player.vimeo.com' + video.uri.replace('/videos/', '/video/')
         return (

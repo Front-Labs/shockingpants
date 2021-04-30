@@ -25,9 +25,34 @@
   iframe {
     width: 60%;
     height: 100%;
-    list-style-type: none;
   }
+
   .player-text {
-    width: 30%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .embedded-player iframe {
+    position: relative;
+    width: 80%;
+    bottom: 12rem;
+  }
+
+  .player-text {
+    position: absolute;
+    width: 100%;
+    p {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .times img {
+    position: absolute;
+    width: 7vw;
+    top: 5%;
+    right: 7%;
+    filter: invert(1);
   }
 }

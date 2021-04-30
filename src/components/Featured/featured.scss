@@ -18,16 +18,12 @@
 }
 
 @media screen and (max-width: 2000px) {
-  .logo {
+  .logo img {
     mix-blend-mode: difference;
-    img {
-      position: absolute;
-      width: 10%;
-      height: auto;
-      top: 2rem;
-      right: 3rem;
-      z-index: 2;
-    }
+    position: absolute;
+    width: 10%;
+    top: 2rem;
+    left: 3rem;
   }
 }
 
@@ -35,19 +31,17 @@
   .logo img {
     position: absolute;
     width: 15%;
-    z-index: 2;
-    height: auto;
   }
 }
 
 @media screen and (max-width: 400px) {
   .logo img {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    position: fixed;
+    z-index: 4;
+    left: 2rem;
+    top: 1.7rem;
     width: 20%;
-    z-index: 2;
-    height: auto;
+    mix-blend-mode: normal;
   }
 }
 
