@@ -16,8 +16,8 @@ export default function MouseOverPopover({ quote, popup }) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const handlePopoverOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handlePopoverOpen = () => {
+    setAnchorEl(document.getElementById("studio"));
   };
 
   const handlePopoverClose = () => {
@@ -29,12 +29,13 @@ export default function MouseOverPopover({ quote, popup }) {
   return (
     <div className="quote">
       <Typography
+        variant="h3"
         aria-owns={open ? 'mouse-over-popover' : undefined}
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <h3>{quote}</h3>
+        {quote}
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -45,12 +46,12 @@ export default function MouseOverPopover({ quote, popup }) {
         open={open}
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: 'center',
+          horizontal: 'center',
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: 'center',
+          horizontal: 'center',
         }}
         onClose={handlePopoverClose}
         disableRestoreFocus
