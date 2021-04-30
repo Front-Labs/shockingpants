@@ -5,8 +5,8 @@
 
 .slide {
   height: 100%;
-  background-size: 100%;
-  background-position-y: center;
+  background-position: center;
+  background-repeat: no-repeat;
   .slide-txt {
     display: flex;
     flex-direction: column;
