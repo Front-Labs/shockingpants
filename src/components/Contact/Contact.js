@@ -5,6 +5,24 @@ const Contact = () => {
     <section id="contact" style={{
       backgroundImage: "url(images/contact2.jpg)"
     }}>
+      <div className="logo-container">
+        <div className="studio-logo">
+          <img
+            src="images/logo-bar-black.png"
+            alt="logo"
+          />
+          <img
+            src="images/logo-bar-white.png"
+            className="flicker-image"
+            alt="logo"
+          />
+          <img
+            src="images/logo-bar-white.png"
+            className="flicker-image-alternate"
+            alt="logo"
+          />
+        </div>
+      </div>
       <div className="quote top">
         <h3>'Mark is a skilled pitch editor'</h3>
       </div>

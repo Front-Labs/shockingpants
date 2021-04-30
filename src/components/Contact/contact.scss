@@ -1,20 +1,42 @@
 #contact {
-  height: 500vh;
+  height: 600vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  .logo-container {
+    position: absolute;
+    padding-top: 8rem;
+    height: 100%;
+    width: 15rem;
+    left: 4rem;
+    .studio-logo {
+      position: sticky;
+      top: 4rem;
+      img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      .flicker-image {
+        animation: flicker 700ms alternate infinite;
+      }
+      .flicker-image-alternate {
+        animation: flicker 600ms alternate infinite;
+      }
+    }
+  }
 }
 
 .quote {
-  padding-top: 100vh;
+  padding-top: 125vh;
   position: absolute;
-  height: 150vh;
+  height: 200vh;
   left: 10%;
   h3 {
     position: sticky;
-    top: 30vh;
+    top: 75vh;
     color: white;
     font-size: 2rem;
     font-family: "Bangers", cursive;
@@ -32,9 +54,9 @@
 
 .contact-buttons {
   position: absolute;
-  padding-top: 85vh;
+  padding-top: 60vh;
   height: 100%;
-  right: 5%;
+  right: 10%;
   ul {
     position: sticky;
     top: 85vh;
@@ -62,15 +84,16 @@
 
 .arrow {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 5vh;
+  right: 5%;
   transform: translate(-50%) rotate(180deg);
   span {
+    margin-top: -15px;
     display: block;
     width: 25px;
     height: 25px;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
     animation: buttonbounce 2.5s infinite;
   }
   span:nth-child(2) {
@@ -92,5 +115,41 @@
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
   }
 }
