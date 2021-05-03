@@ -1,90 +1,127 @@
 #contact {
-  height: 600vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  .logo-container {
-    position: absolute;
-    padding-top: 8rem;
-    height: 100%;
-    width: 15rem;
-    left: 4rem;
-    .studio-logo {
-      position: sticky;
-      top: 4rem;
-      img {
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
-      .flicker-image {
-        animation: flicker 700ms alternate infinite;
-      }
-      .flicker-image-alternate {
-        animation: flicker 600ms alternate infinite;
-      }
+}
+
+.logo-container {
+  position: absolute;
+  padding-top: 8rem;
+  height: 100%;
+  width: 15rem;
+  left: 4rem;
+  .studio-logo {
+    position: sticky;
+    top: 4rem;
+    img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .flicker-image {
+      animation: flicker 700ms alternate infinite;
+    }
+    .flicker-image-alternate {
+      animation: flicker 600ms alternate infinite;
     }
   }
 }
 
 .quote {
-  padding-top: 125vh;
-  position: absolute;
-  height: 200vh;
-  left: 10%;
+  height: 250vh;
+  padding-top: 100vh;
   h3 {
     position: sticky;
-    top: 75vh;
     color: white;
     font-size: 2rem;
     font-family: "Bangers", cursive;
   }
+  span {
+    position: sticky;
+    color: white;
+    font-size: 1rem;
+    font-family: "Bangers", cursive;
+  }
 }
 .quote.top {
-  top: 0;
+  h3 {
+    top: 80vh;
+    margin-left: 8rem;
+  }
+  span {
+    top: 50vh;
+    left: 20rem;
+  }
 }
 .quote.mid {
-  top: 150vh;
+  h3 {
+    top: 80vh;
+    margin-left: 8rem;
+  }
+  span {
+    top: 50vh;
+    left: 20rem;
+  }
 }
 .quote.low {
-  top: 300vh;
+  h3 {
+    top: 80vh;
+    margin-left: 8rem;
+  }
+  span {
+    top: 50vh;
+    left: 20rem;
+  }
 }
 
-.contact-buttons {
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.contact-container {
   position: absolute;
-  padding-top: 60vh;
   height: 100%;
-  right: 10%;
-  ul {
-    position: sticky;
-    top: 85vh;
-  }
+  right: 8rem;
+  padding-top: 8rem;
+  width: 25vw;
+}
+.contact-buttons {
+  position: sticky;
+  top: 85vh;
   li {
     float: right;
     margin-right: 30px;
     list-style-type: none;
-    a {
-      img {
-        width: 30px;
-        height: 30px;
-        opacity: 0.75;
-        display: block;
-        border: none;
-        filter: invert(1);
-      }
-      img:hover {
-        opacity: 1;
-        transition: 400ms ease-in-out;
-      }
+    a img {
+      width: 30px;
+      height: 30px;
+      opacity: 0.75;
+      display: block;
+      border: none;
+      filter: invert(1);
+    }
+    a img:hover {
+      opacity: 1;
+      transition: 400ms ease-in-out;
     }
   }
 }
 
 .arrow {
   position: absolute;
-  bottom: 5vh;
+  bottom: 7vh;
   right: 5%;
   transform: translate(-50%) rotate(180deg);
   span {
