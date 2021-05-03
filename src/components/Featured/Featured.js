@@ -35,9 +35,8 @@ export default function Featured() {
         return (
           <div key={index} className={`featured-item ${index === current ? 'active' : ''}`}>
             <ReactPlayer
-              className='player'
-              width='110%'
-              height='110%'
+              width='100%'
+              height='100%'
               url={url}
               config={{
                 vimeo: {
