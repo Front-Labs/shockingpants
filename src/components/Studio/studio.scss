@@ -23,3 +23,18 @@
   justify-content: flex-start;
   transform: translateX(-45%);
 }
+
+@media screen and (max-width: 400px) {
+
+  .slide .slide-txt {
+    display: inline-block;
+    top: 70%;
+    text-align: center;
+    left: 6rem;
+  }
+
+  .splide__pagination {
+    display: none;
+  }
+  
+}

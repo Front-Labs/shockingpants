@@ -1,28 +1,50 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-import './studio.scss'
+import './studio.scss';
+import { useMediaQuery } from 'react-responsive';
 
-const studio = () => {
+const Studio = () => {
+  let options = {
+    height: '125vh',
+    width: '100%',
+    type: 'loop',
+    autoplay: false,
+    speed: 2500,
+    arrows: true,
+    easing: 'ease',
+    interval: 6000,
+    drag: true,
+    pagination: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    keyboard: false
+  }
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 });
+  if (isDesktopOrLaptop) {
+    options = {
+      height: '125vh',
+      width: '100%',
+      type: 'loop',
+      autoplay: true,
+      speed: 2500,
+      arrows: false,
+      easing: 'ease',
+      interval: 6000,
+      drag: false,
+      pagination: true,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      keyboard: false
+    }
+  }
+
   return (
     <section id="studio">
       <Splide
-        options={{
-          height: '125vh',
-          width: '100%',
-          type: 'loop',
-          autoplay: true,
-          speed: 2500,
-          arrows: false,
-          easing: 'ease',
-          interval: 6000,
-          drag: false,
-          pagination: true,
-          pauseOnHover: false,
-          pauseOnFocus: false,
-          keyboard: false
-        }}
+        options={options}
         hasSliderWrapper
       >
+
         <SplideSlide >
           <div className="slide" style={{
             backgroundImage: "url(images/couch.jpeg)",
@@ -84,8 +106,8 @@ const studio = () => {
         </SplideSlide>
 
       </Splide>
-    </section >
+    </section>
   )
 }
 
-export default studio
+export default Studio
