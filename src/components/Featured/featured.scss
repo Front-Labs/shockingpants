@@ -9,9 +9,13 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 150%;
-  top: 150%;
-  transform: scale(3) translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  // TO SCALE @MEDIA QUERY
+  // left: 150%;
+  // top: 150%;
+  // transform: scale(3) translate(-50%, -50%);
 }
 
 .featured-item.active {
