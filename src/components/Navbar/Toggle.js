@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../global';
-import { theme } from '../theme';
+import { GlobalStyles } from './Styled';
+import { theme } from './theme';
 import Burger from './Burger.js';
 import Menu from './Menu.js';
 import useOnClickOutside from './UseOnClickOutside'
