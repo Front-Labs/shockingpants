@@ -1,4 +1,5 @@
-import { createGlobalStyle, styled } from 'styled-components';
+import createGlobalStyle from 'styled-components';
+import styled from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     html, body {
@@ -16,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
   `;
-  
+
 export const StyledBurger = styled.button`
   position: relative;
   display: flex;

@@ -1,6 +1,5 @@
-import React from 'react';
 import { bool, func } from 'prop-types';
-import { StyledBurger } from './Styled';
+import { StyledBurger } from './style';
 
 const Burger = ({ open, setOpen }) => {
   return (
