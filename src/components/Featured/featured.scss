@@ -15,6 +15,10 @@
   justify-content: center;
 }
 
+.logo {
+  mix-blend-mode: difference;
+}
+
 @media screen and (max-width: 400px) {
   .logo {
     position: fixed;
@@ -25,12 +29,17 @@
       width: 30%;
     }
   }
+
+  .featured-item.active {
+    position: relative;
+    bottom: 5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .logo {
     position: absolute;
-    mix-blend-mode: difference;
+    // mix-blend-mode: difference;
     top: 2rem;
     left: 2rem;
     img {
@@ -42,7 +51,7 @@
 @media screen and (min-width: 2000px) {
   .logo {
     position: absolute;
-    mix-blend-mode: difference;
+    // mix-blend-mode: difference;
     top: 2rem;
     left: 3rem;
     img {
