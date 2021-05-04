@@ -96,6 +96,7 @@
   right: 8rem;
   padding-top: 8rem;
   width: 25vw;
+  z-index: 1;
   .contact-buttons {
     position: sticky;
     top: 85vh;
@@ -124,6 +125,7 @@
   bottom: 7vh;
   right: 5%;
   transform: translate(-50%) rotate(180deg);
+  z-index: 1;
   span {
     margin-top: -15px;
     display: block;
