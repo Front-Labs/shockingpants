@@ -1,19 +1,16 @@
 import { useState, useRef } from 'react';
-import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './style';
-import { theme } from './theme';
 import Burger from './Burger.js';
 import Menu from './Menu.js';
-import useOnClickOutside from './UseOnClickOutside'
+import ClickToClose from './ClickToClose'
 
 function Toggle() {
   const ref = useRef();
   const [open, setOpen] = useState(false);
-  useOnClickOutside(ref, () => setOpen(false));
+  ClickToClose(ref, () => setOpen(false));
   return (
-
-    <ThemeProvider theme={theme}>
-      {/* <GlobalStyles /> */}
+    <>
+      <GlobalStyles/>
       <div className="logo">
         <img src="images/Post-Mark.png" alt="logo" />
       </div>
@@ -21,7 +18,7 @@ function Toggle() {
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
-    </ThemeProvider>
+    </>
   );
 }
 export default Toggle;
