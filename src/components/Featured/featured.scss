@@ -6,10 +6,6 @@
 
 .featured-item {
   visibility: hidden;
-  // TO SCALE @MEDIA QUERY
-  height: 100%;
-  width: 100%;
-  //
   position: absolute;
   left: 50%;
   top: 50%;
@@ -20,47 +16,84 @@
   visibility: visible;
 }
 
-.logo {
-  mix-blend-mode: difference;
+.studio-logo {
+  img {
+    position: fixed;
+    z-index: 2;
+  }
+
+  .flicker-image {
+    animation: flicker 700ms alternate infinite;
+  }
+
+  .flicker-image-alternate {
+    animation: flicker 600ms alternate infinite;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .logo {
-    position: fixed;
-    z-index: 1;
-    left: 2rem;
-    top: 1.7rem;
+  .studio-logo {
     img {
-      width: 30%;
+      width: 20%;
+      left: 2rem;
+      top: 1.7rem;
     }
   }
 
   .featured-item.active {
-    position: relative;
-    bottom: 5rem;
+    top: 45%;
+    height: 200%;
+    width: 200%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .logo {
-    position: absolute;
-    // mix-blend-mode: difference;
-    top: 2rem;
-    left: 2rem;
-    img {
-      width: 60%;
-    }
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .logo {
-    position: absolute;
-    // mix-blend-mode: difference;
-    top: 2rem;
-    left: 3rem;
+  .studio-logo {
     img {
       width: 10%;
+      top: 2.5rem;
+      left: 4rem;
     }
+  }
+
+  .featured-item.active {
+    height: 100%;
+    width: 100%;
   }
 }
