@@ -6,48 +6,45 @@
   visibility: visible;
   position: absolute;
   color: white;
-  bottom: 15%;
   opacity: 0.8;
-  
-  .MuiCircularProgress-root {
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-  }
-  
-  .MuiCircularProgress-svg {
-    color: pink;
-    opacity: 0.4;
-  }
+  font-family: "Bangers", cursive;
 }
 
-@media screen and (max-width: 2000px) {
-  .card.active {
-    left: 10%;
-    h3 {
-      transform: translate(-30px, -25%);
-    }
-  }
+.MuiCircularProgress-root {
+  position: absolute;
+  bottom: 0em;
+  left: 0%;
 }
 
-@media screen and (max-width: 1024px) {
-  .card.active {
-    left: 15%;
-    h3 {
-      transform: translate(-30px, -25%);
-    }
-  }
+.MuiCircularProgress-svg {
+  color: pink;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 400px) {
   .card.active {
-    left: 30%;
+    bottom: 15%;
+    left: 15%;
     h3 {
-      transform: translate(-40px, -130%);
+      transform: translate(3rem, -50%);
       font-size: 1rem;
-      font-weight: 100;;
-      font-family: "Bangers", cursive;
-      // visibility: hidden;
+      font-weight: 100;
+    }
+  }
+
+  .MuiCircularProgress-svg {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card.active {
+    left: 5%;
+    bottom: 20%;
+    h3 {
+      transform: translate(3rem, -50%);
+      font-size: 1.5rem;
+      font-weight: 100;
     }
   }
 }

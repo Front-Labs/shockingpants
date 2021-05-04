@@ -11,9 +11,6 @@ function Toggle() {
   return (
     <>
       <GlobalStyles/>
-      <div className="logo">
-        <img src="images/Post-Mark.png" alt="logo" />
-      </div>
       <div id='menu' ref={ref}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

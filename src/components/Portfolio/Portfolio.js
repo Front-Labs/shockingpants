@@ -17,27 +17,27 @@ export default function Portfolio() {
     <section id="portfolio">
       {portfolioData.map((video, index) => {
         return (
-          <div
+          <Link
             key={index}
-            className="project"
-            style={{
-              backgroundImage: `url(${video.pictures.sizes[5].link})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center"
-            }}>
-            <Link to={{
-              pathname:   "/embeddedplayer",
-              state:      {
-                link : `${video.uri}`,
+            to={{
+              pathname: "/embeddedplayer",
+              state: {
+                link: `${video.uri}`,
                 title: `${video.name}`,
                 description: `${video.description}`
               }
-            }} className="glitch">
+            }}>
+            <div
+              className="project"
+              style={{
+                backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}>
               <span aria-hidden="true">{video.name}</span>
-              {video.name}
               <span aria-hidden="true">{video.name}</span>
-            </Link>
-          </div>
+            </div>
+          </Link>
         )
       })}
     </section>

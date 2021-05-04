@@ -6,29 +6,6 @@
   background-attachment: fixed;
 }
 
-.logo-container {
-  position: absolute;
-  padding-top: 8rem;
-  height: 100%;
-  width: 15rem;
-  left: 4rem;
-  .studio-logo {
-    position: sticky;
-    top: 4rem;
-    img {
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-    .flicker-image {
-      animation: flicker 700ms alternate infinite;
-    }
-    .flicker-image-alternate {
-      animation: flicker 600ms alternate infinite;
-    }
-  }
-}
-
 .quote {
   height: 250vh;
   padding-top: 100vh;
@@ -154,47 +131,5 @@
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
-  }
-}
-
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 0.8;
-  }
-  30% {
-    opacity: 0.9;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  60% {
-    opacity: 0.7;
-  }
-  70% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.2;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.7;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .studio-logo img {
-    display: none;
   }
 }
