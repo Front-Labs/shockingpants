@@ -88,21 +88,22 @@ export const StyledMenu = styled.nav`
   z-index: 1;
 
   @media screen and (max-width: 400px) {
-    transform: ${({ open }) => open ? 'translateX(10%)' : 'translateX(100%)'};
+    position: fixed;
     background-color: black;
     height: 100%;
-    position: fixed;
     width: 100%;
     padding-top: 1.5rem;
     top: 0;
-
+    padding-top: 50%;
+    padding-left: 10%;
+    transform: ${({ open }) => open ? 'translateX(10%)' : 'translateX(100%)'};
   }
 
   @media screen and (min-width: 1024px) {
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     position: absolute;
-    align-items: flex-start;
     top: 5rem;
+    padding-top: 10%;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   }
 
 
@@ -114,11 +115,12 @@ export const StyledMenu = styled.nav`
     opacity: 0.8;
     text-decoration: none;
     transition: color 0.3s linear;
-    text-align: center;
+    
 
     @media screen and (max-width: 400px) {
       font-size: 1rem;
       padding: 1.3rem;
+      text-align: center;
     }
 
     @media screen and (min-width: 1024px) {
