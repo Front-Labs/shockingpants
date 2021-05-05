@@ -14,7 +14,7 @@ const Studio = () => {
     easing: 'ease',
     interval: 6000,
     drag: true,
-    pagination: true,
+    pagination: false,
     pauseOnHover: false,
     pauseOnFocus: false,
     keyboard: false
@@ -31,7 +31,7 @@ const Studio = () => {
       easing: 'ease',
       interval: 6000,
       drag: false,
-      pagination: true,
+      pagination: false,
       pauseOnHover: false,
       pauseOnFocus: false,
       keyboard: false
@@ -54,6 +54,7 @@ const Studio = () => {
               <h4>
                 I brainstorm my finest ideas on the couch of success
                 <br></br>
+                <br></br>
                 The postmark team collobates here daily
               </h4>
             </div>
@@ -68,6 +69,7 @@ const Studio = () => {
               <h2>Edit Suite</h2>
               <h4>
                 Where the magic happens
+                <br></br>
                 <br></br>
                 All the best tools Logic, Premiere for the best product
               </h4>
@@ -84,6 +86,7 @@ const Studio = () => {
               <h4>
                 The core of Postmark
                 <br></br>
+                <br></br>
                 Multimillion deals start and finish right here
               </h4>
             </div>
@@ -98,6 +101,7 @@ const Studio = () => {
               <h2>Style and Substance</h2>
               <h4>
                 Whatever you need we have it in spades
+                <br></br>
                 <br></br>
                 Bags of Style and Bags of Substance ;)
               </h4>

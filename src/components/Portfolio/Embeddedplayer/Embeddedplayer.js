@@ -11,6 +11,11 @@ const EmbeddedPlayer = () => {
 
   return (
     <section id="embedded-player">
+      <div className="studio-logo">
+        <img src="images/Post-Mark-Black.png" alt="logo" />
+        <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image" />
+        <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image-alternate" />
+      </div>
       <a href="/#portfolio">
         <div className="times">
           <img src="images/times-circle-regular.svg" alt="times" />
@@ -26,6 +31,7 @@ const EmbeddedPlayer = () => {
         ></iframe>
         <div className="player-text">
           <p>{title}</p>
+          <br></br>
           <p>{description}</p>
         </div>
       </div>
