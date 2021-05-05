@@ -7,7 +7,7 @@
 }
 
 .quote {
-  height: 250vh;
+  height: 200vh;
   padding-top: 100vh;
   h3 {
     position: sticky;
@@ -16,40 +16,11 @@
     font-family: "Bangers", cursive;
   }
   span {
+    display: inline-block;
     position: sticky;
     color: white;
     font-size: 1rem;
     font-family: "Bangers", cursive;
-  }
-}
-.quote.top {
-  h3 {
-    top: 80vh;
-    margin-left: 8rem;
-  }
-  span {
-    top: 50vh;
-    left: 20rem;
-  }
-}
-.quote.mid {
-  h3 {
-    top: 80vh;
-    margin-left: 8rem;
-  }
-  span {
-    top: 50vh;
-    left: 20rem;
-  }
-}
-.quote.low {
-  h3 {
-    top: 80vh;
-    margin-left: 8rem;
-  }
-  span {
-    top: 50vh;
-    left: 20rem;
   }
 }
 
@@ -69,16 +40,16 @@
 
 .contact-container {
   position: absolute;
+  width: 100%;
   height: 100%;
-  right: 8rem;
-  padding-top: 8rem;
-  width: 25vw;
+  padding-top: 0;
   z-index: 1;
   .contact-buttons {
+    display: flex;
     position: sticky;
-    top: 85vh;
+
     li {
-      float: right;
+      float: left;
       margin-right: 30px;
       list-style-type: none;
       a img {
@@ -99,8 +70,7 @@
 
 .arrow {
   position: absolute;
-  bottom: 7vh;
-  right: 5%;
+  left: 50%;
   transform: translate(-50%) rotate(180deg);
   z-index: 1;
   span {
@@ -131,5 +101,57 @@
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quote {
+    h3 {
+      top: 65vh;
+      margin-left: 7rem;
+    }
+    span {
+      width: 70%;
+      top: 40vh;
+      left: 20%;
+    }
+  }
+
+  .contact-container {
+    .contact-buttons {
+      justify-content: center;
+      top: 88vh;
+    }
+  }
+
+  .arrow {
+    bottom: 16vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    h3 {
+      top: 75vh;
+      margin-left: 18%;
+    }
+    span {
+      width: 35%;
+      top: 40vh;
+      left: 33%;
+      line-height: 1.3rem;
+    }
+  }
+
+  .contact-container {
+    right: 6rem;
+    .contact-buttons {
+      top: 87vh;
+      justify-content: flex-end;
+    }
+  }
+
+  .arrow {
+    bottom: 10vh;
   }
 }

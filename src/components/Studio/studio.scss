@@ -1,6 +1,5 @@
 #studio {
   position: relative;
-  height: 125vh;
 }
 
 .slide {
@@ -12,29 +11,37 @@
     flex-direction: column;
     color: white;
     position: absolute;
-    top: 50%;
-    right: 6rem;
     font-family: monospace;
   }
 }
 
-.splide__pagination {
-  bottom: 3em;
-  justify-content: center;
-  transform: translateX(-50%);
-}
-
 @media screen and (max-width: 400px) {
 
-  .slide .slide-txt {
-    display: inline-block;
-    top: 70%;
-    text-align: center;
-    left: 6rem;
+  #studio {
+    height: 100vh;
   }
 
-  .splide__pagination {
-    display: none;
+  .slide .slide-txt {
+    top: 50%;
+    text-align: justify;
+    width: 90%;
+    padding: 5% 5%;
   }
-  
+
+  .splide__arrow {
+    top: 42%;
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  #studio {
+    height: 95vh;
+  }
+
+  .slide .slide-txt {
+    top: 50%;
+    text-align: justify;
+    width: 90%;
+    padding: 5% 5%;
+  }
 }

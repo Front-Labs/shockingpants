@@ -35,18 +35,18 @@ const Contact = () => {
         </div>
       </a>
       <Observer
-        position="quote top"
-        quote="Mark is a skilled pitch editor"
+        position="quote"
+        quote='"Mark is a skilled pitch editor"'
+        description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
+      />
+      <Observer
+        position="quote"
+        quote='"Im a real family man"'
         description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
       />
       <Observer
-        position="quote mid"
-        quote="I'm a real family man"
-        description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
-      />
-      <Observer
-        position="quote low"
-        quote="Editor with an eye for detail"
+        position="quote"
+        quote='"Editor with an eye for detail"'
         description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
       />
     </section >
