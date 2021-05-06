@@ -49,6 +49,11 @@ const Contact = () => {
         quote='"Editor with an eye for detail"'
         description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
       />
+      <footer className="footer-container">
+        <p>
+          © 2021 FrontLabs. All Rights Reserved.
+        </p>
+      </footer>
     </section >
   )
 }

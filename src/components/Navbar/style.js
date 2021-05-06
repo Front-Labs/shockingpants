@@ -89,14 +89,14 @@ export const StyledMenu = styled.nav`
 
   @media screen and (max-width: 400px) {
     position: fixed;
-    background-color: black;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), black, black, black);
     height: 100%;
     width: 100%;
     padding-top: 1.5rem;
     top: 0;
     padding-top: 50%;
-    padding-left: 10%;
-    transform: ${({ open }) => open ? 'translateX(10%)' : 'translateX(100%)'};
+    padding-left: 20%;
+    transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
   }
 
   @media screen and (min-width: 1024px) {

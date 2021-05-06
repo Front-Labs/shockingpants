@@ -107,12 +107,13 @@
 @media screen and (max-width: 400px) {
   .quote {
     h3 {
-      top: 65vh;
-      margin-left: 7rem;
+      width: 60%;
+      top: 60vh;
+      margin-left: 6rem;
     }
     span {
       width: 70%;
-      top: 40vh;
+      top: 35vh;
       left: 20%;
     }
   }
@@ -126,13 +127,28 @@
 
   .arrow {
     bottom: 16vh;
+    span {
+      margin-top: -15px;
+      display: block;
+      width: 23px;
+      height: 23px;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+      animation: buttonbounce 2.5s infinite;
+    }
+    span:nth-child(2) {
+      animation-delay: -0.1s;
+    }
+    span:nth-child(3) {
+      animation-delay: -0.2s;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .quote {
     h3 {
-      top: 75vh;
+      top: 65vh;
       margin-left: 18%;
     }
     span {
@@ -144,7 +160,7 @@
   }
 
   .contact-container {
-    right: 6rem;
+    right: 3.5rem;
     .contact-buttons {
       top: 87vh;
       justify-content: flex-end;
@@ -152,6 +168,15 @@
   }
 
   .arrow {
-    bottom: 10vh;
+    bottom: 8vh;
+  }
+
+  .footer-container {
+    position: absolute;
+    left: 3%;
+    bottom:7vh;
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
   }
 }
