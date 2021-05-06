@@ -9,7 +9,7 @@ export default function Featured() {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    fetch('https://www.postmark.nl:3001/featured').then(response => response.json())
+    fetch('https://www.postmark.nl/featured').then(response => response.json())
       .then(featureData => {
         setFeatureData(featureData)
       }).catch(error => {
