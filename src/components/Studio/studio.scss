@@ -15,7 +15,9 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen 
+and (max-width: 1280px)
+and (orientation: portrait) {
 
   #studio {
     height: 100vh;
@@ -33,7 +35,13 @@
   }  
 }
 
-@media screen and (min-width: 1024px) {
+@media screen 
+and (max-width: 1280px)
+and (orientation: landscape) {
+  
+}
+
+@media screen and (min-width: 1280px) {
   #studio {
     height: 95vh;
   }

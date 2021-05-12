@@ -4,7 +4,7 @@ import './contact.scss'
 const Contact = () => {
   return (
     <section id="contact" style={{
-      backgroundImage: "url(images/contact2.jpg)"
+      backgroundImage: "url(images/Mark-Office.jpeg)"
     }}>
       <div className="contact-container">
         <div className="contact-buttons">
@@ -20,7 +20,7 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              <a href="https://goo.gl/maps/ho1xhrgE9cPNo5Ei8" target="_blank" rel="noreferrer">
+              <a href="https://goo.gl/maps/AFnGUzM7BgBCJ5EV9" target="_blank" rel="noreferrer">
                 <img src="images/map-marker.svg" alt="map-marker" />
               </a>
             </li>
