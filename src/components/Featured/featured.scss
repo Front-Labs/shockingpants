@@ -23,11 +23,11 @@
   }
 
   .flicker-image {
-    animation: flicker 700ms alternate infinite;
+    animation: flicker 1100ms alternate infinite;
   }
 
   .flicker-image-alternate {
-    animation: flicker 600ms alternate infinite;
+    animation: flicker 1000ms alternate infinite;
   }
 }
 
@@ -67,7 +67,9 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen 
+and (max-width: 1280px)
+and (orientation: portrait) {
   .studio-logo {
     img {
       width: 20%;
@@ -83,7 +85,24 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen 
+and (max-width: 1280px)
+and (orientation: landscape) {
+  .studio-logo {
+    img {
+      width: 10%;
+      top: 2.5rem;
+      left: 4rem;
+    }
+  }
+
+  .featured-item.active {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .studio-logo {
     img {
       width: 10%;
