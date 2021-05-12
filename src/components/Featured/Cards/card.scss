@@ -18,23 +18,21 @@
 .MuiCircularProgress-svg {
   color: pink;
   opacity: 0.4;
+  width: 75%;
 }
+
 
 @media screen 
 and (max-width: 1280px)
 and (orientation: portrait) {
   .card.active {
-    bottom: 19%;
+    bottom: 14%;
     left: 10%;
     h3 {
-      transform: translate(3rem, -50%);
+      transform: translate(2rem, -50%);
       font-size: 1rem;
       font-weight: 300;
     }
-  }
-
-  .MuiCircularProgress-svg {
-    width: 75%;
   }
 }
 
@@ -45,11 +43,11 @@ and (orientation: landscape) {
     left: 5%;
     bottom: 20%;
     h3 {
-      transform: translate(3rem, -50%);
+      transform: translate(3rem);
       font-size: 1.5rem;
       font-weight: 300;
     }
-  }
+  }  
 }
 
 @media screen and (min-width: 1280px) {
@@ -57,7 +55,7 @@ and (orientation: landscape) {
     left: 5%;
     bottom: 20%;
     h3 {
-      transform: translate(3rem, -50%);
+      transform: translate(3rem);
       font-size: 1.5rem;
       font-weight: 300;
     }
