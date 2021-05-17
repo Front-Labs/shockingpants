@@ -36,18 +36,18 @@ const Contact = () => {
       </a>
       <Observer
         position="quote"
-        quote='"Mark is a skilled pitch editor"'
-        description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
+        quote="'Who you gonna call? Pitchbusters!"
+        description="Winning pitches since he was in his diapers.'"
       />
       <Observer
         position="quote"
-        quote='"Im a real family man"'
-        description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
+        quote="'Dad of two aliens"
+        description="Mark knew about UFO's even before the Pentagon!'"
       />
       <Observer
         position="quote"
-        quote='"Editor with an eye for detail"'
-        description="Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum"
+        quote="'Rythm is a dancer!"
+        description="It's a soul's companion. You can feel it everywhere. Especially in Mark's edits.'"
       />
       <footer className="footer-container">
         <p>
