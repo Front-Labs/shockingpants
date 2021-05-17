@@ -6,28 +6,6 @@
   background-attachment: fixed;
 }
 
-.quote {
-  height: 100vh;
-  h3 {
-    // position: sticky;
-    padding-top: 20vh;
-    color: white;
-    font-size: 2rem;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-  }
-  span {
-    padding-bottom: 15%;
-    display: inline-block;
-    position: sticky;
-    color: white;
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    font-weight: bold;
-  }
-}
-
 .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
@@ -57,8 +35,6 @@
       margin-right: 30px;
       list-style-type: none;
       a img {
-        width: 30px;
-        height: 30px;
         opacity: 0.75;
         display: block;
         border: none;
@@ -110,47 +86,42 @@
 
 @media screen and (max-width: 1280px) and (orientation: portrait) {
   #contact {
-    background-position: 20%;
-  }
-  .quote {
-    // height: 50vh;
-    // margin-bottom: 50vh;
-    h3 {
-      width: 60%;
-      // top: 60vh;
-      margin-left: 6rem;
-    }
-    span {
-      width: 70%;
-      top: 50vh;
-      left: 20%;
-    }
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
   }
 
-  .contact-container {
-    .contact-buttons {
-      justify-content: center;
-      top: 80vh;
+  .quote-container1 {
+    display: none;
+  }
+
+  .contact-buttons {
+    justify-content: center;
+    top: 80vh;
+    li a img {
+      width: 42px;
+      height: 42px;
     }
   }
 
   .arrow {
-    bottom: 25vh;
-    span {
-      margin-top: -15px;
-      display: block;
-      width: 23px;
-      height: 23px;
-      border-bottom: 1px solid white;
-      border-right: 1px solid white;
-      animation: buttonbounce 2.5s infinite;
-    }
-    span:nth-child(2) {
-      animation-delay: -0.1s;
-    }
-    span:nth-child(3) {
-      animation-delay: -0.2s;
-    }
+    display: none;
+  //   bottom: 25vh;
+  //   span {
+  //     margin-top: -15px;
+  //     display: block;
+  //     width: 23px;
+  //     height: 23px;
+  //     border-bottom: 1px solid white;
+  //     border-right: 1px solid white;
+  //     animation: buttonbounce 2.5s infinite;
+  //   }
+  //   span:nth-child(2) {
+  //     animation-delay: -0.1s;
+  //   }
+  //   span:nth-child(3) {
+  //     animation-delay: -0.2s;
+  //   }
   }
 
   .footer-container {
@@ -159,18 +130,47 @@
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
-  .quote {
+  .quote-container1 {
+    padding-top: 25vh;
+    color: white;
     h3 {
-      top: 65vh;
-      margin-left: 18%;
-      font-weight: 300;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
     }
     span {
-      width: 35%;
-      top: 40vh;
-      left: 33%;
-      line-height: 1.3rem;
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      font-weight: bold;
     }
+  }
+
+  .quote-container2 {
+    padding-top: 40vh;
+  }
+
+  .quote-container3 {
+    padding-top: 40vh;
+    padding-bottom: 15%;
+  }
+
+  .quote1 {
+    position: sticky;
+    top: 25vh;
+    margin-left: 10%;
+  }
+
+  .quote2 {
+    position: sticky;
+    top: 45vh;
+    margin-left: 20%;
+  }
+
+  .quote3 {
+    position: relative;
+    top: 60%;
+    margin-left: 10%;
   }
 
   .contact-container {
@@ -178,6 +178,11 @@
     .contact-buttons {
       top: 70vh;
       justify-content: flex-end;
+      li a img {
+        width: 40px;
+        height: 40px;
+        opacity: 0.75;
+      }
     }
   }
 
@@ -191,18 +196,48 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .quote {
+  .quote-container1 {
+    padding-top: 25vh;
+    color: white;
     h3 {
-      top: 65vh;
-      margin-left: 18%;
-      font-weight: 300;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
     }
     span {
-      width: 35%;
-      top: 40vh;
-      left: 33%;
-      line-height: 1.3rem;
+      padding-left: 1rem;
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      font-weight: bold;
     }
+  }
+
+  .quote-container2 {
+    padding-top: 40vh;
+  }
+
+  .quote-container3 {
+    padding-top: 40vh;
+    padding-bottom: 15%;
+  }
+
+  .quote1 {
+    position: sticky;
+    top: 25vh;
+    margin-left: 10%;
+  }
+
+  .quote2 {
+    position: sticky;
+    top: 45vh;
+    margin-left: 15%;
+  }
+
+  .quote3 {
+    position: relative;
+    top: 60%;
+    margin-left: 10%;
   }
 
   .contact-container {
@@ -210,6 +245,10 @@
     .contact-buttons {
       top: 87vh;
       justify-content: flex-end;
+      li a img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 

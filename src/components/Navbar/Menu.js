@@ -36,7 +36,7 @@ const Menu = ({ open, setOpen }) => {
         }}
         transition={{ type: 'spring', stiffness: 100 }}
       >
-        About Me
+        Contact
       </motion.a>
     </StyledMenu>
   )
