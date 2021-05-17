@@ -124,7 +124,6 @@ export const StyledMenu = styled.nav`
   and (orientation: landscape) {
     position: absolute;
     top: 5rem;
-    // padding-top: 10%;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 }
 
@@ -154,7 +153,7 @@ export const StyledMenu = styled.nav`
     and (orientation: portrait) {
       font-size: 1rem;
       padding: 1.3rem;
-      text-align: right;
+      text-align: center;
     }
 
     @media screen 
