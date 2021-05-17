@@ -101,7 +101,6 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   background: transparent;
-  padding: 4rem;
   right: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 1;
@@ -136,7 +135,6 @@ export const StyledMenu = styled.nav`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   }
 
-
   a {
     text-transform: uppercase;
     font-weight: 500;
@@ -146,13 +144,16 @@ export const StyledMenu = styled.nav`
     text-decoration: none;
     transition: color 0.3s linear;
     
+    p {
+      font-size: 1rem;
+    }
 
     @media screen 
     and (max-width: 1280px)
     and (orientation: portrait) {
       font-size: 1rem;
       padding: 1.3rem;
-      text-align: center;
+      text-align: right;
     }
 
     @media screen 

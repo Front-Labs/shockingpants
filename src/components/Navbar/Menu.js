@@ -26,6 +26,7 @@ const Menu = ({ open, setOpen }) => {
         transition={{ type: 'spring', stiffness: 100 }}
       >
         Studio
+        <p>(Coming soon!)</p>
       </motion.a>
 
       <motion.a href="#contact"
