@@ -143,6 +143,7 @@ export const StyledMenu = styled.nav`
     opacity: 0.8;
     text-decoration: none;
     transition: color 0.3s linear;
+    margin-right: 3rem;
     
     p {
       font-size: 1rem;

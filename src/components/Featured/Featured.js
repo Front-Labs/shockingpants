@@ -50,7 +50,7 @@ export default function Featured() {
                 vimeo: {
                   playerOptions: {
                     background: true,
-                    quality: "540p",
+                    quality: "360p",
                     dnt: true,
                     loop: true
                   }
