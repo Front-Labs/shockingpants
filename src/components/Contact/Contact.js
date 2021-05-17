@@ -1,11 +1,20 @@
 import Observer from './Observer'
 import './contact.scss'
+import { useMediaQuery } from 'react-responsive';
+
 
 const Contact = () => {
+  let options = {
+    backgroundImage: 'url(images/Mark.jpg)'
+  }
+  const isMobilePortrait = useMediaQuery({ maxWidth: 1280, orientation: "portrait" });
+  if (isMobilePortrait) {
+    options = {
+      backgroundImage: 'url(images/Mark-Contact-Small.jpg)'
+    }
+  }
   return (
-    <section id="contact" style={{
-      backgroundImage: "url(images/Mark-Office.jpeg)"
-    }}>
+    <section id="contact" style={options}>
       <div className="contact-container">
         <div className="contact-buttons">
           <ul>
@@ -34,21 +43,29 @@ const Contact = () => {
           <span></span>
         </div>
       </a>
-      <Observer
-        position="quote"
-        quote="'Who you gonna call? Pitchbusters!"
-        description="Winning pitches since he was in his diapers.'"
-      />
-      <Observer
-        position="quote"
-        quote="'Dad of two aliens"
-        description="Mark knew about UFO's even before the Pentagon!'"
-      />
-      <Observer
-        position="quote"
-        quote="'Rythm is a dancer!"
-        description="It's a soul's companion. You can feel it everywhere. Especially in Mark's edits.'"
-      />
+
+      <div className="quote-container1">
+        <Observer
+          position="quote1"
+          quote="'Who you gonna call? Pitchbusters!'"
+          description="Winning pitches since he was in his diapers."
+        />
+        <div className="quote-container2">
+          <Observer
+            position="quote2"
+            quote="'Dad of two aliens'"
+            description="Mark knew about UFO's even before the Pentagon!"
+          />
+          <div className="quote-container3">
+            <Observer
+              position="quote3"
+              quote="'Rythm is a dancer!'"
+              description="It's a soul's companion. You can feel it everywhere. Especially in Mark's edits."
+            />
+          </div>
+        </div>
+      </div>
+
       <footer className="footer-container">
         <p>
           © 2021 FrontLabs. All Rights Reserved.
