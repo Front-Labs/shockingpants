@@ -47,19 +47,19 @@ const Contact = () => {
       <div className="quote-container1">
         <Observer
           position="quote1"
-          quote="'Who you gonna call? Pitchbusters!'"
-          description="Winning pitches since he was in his diapers."
+          quote='"Who you gonna call? Pitchbusters!"'
+          description='Winning pitches since he was in his diapers.'
         />
         <div className="quote-container2">
           <Observer
             position="quote2"
-            quote="'Dad of two aliens'"
+            quote='"Dad of two aliens"'
             description="Mark knew about UFO's even before the Pentagon!"
           />
           <div className="quote-container3">
             <Observer
               position="quote3"
-              quote="'Rythm is a dancer!'"
+              quote='"Rythm is a dancer!"'
               description="It's a soul's companion. You can feel it everywhere. Especially in Mark's edits."
             />
           </div>
