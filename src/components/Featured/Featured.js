@@ -52,7 +52,7 @@ export default function Featured() {
                     background: true,
                     quality: "540p",
                     dnt: true,
-                    loop: true
+                    loop: true,
                   }
                 }
               }}
