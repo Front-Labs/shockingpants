@@ -52,7 +52,8 @@ export default function Featured() {
                     background: true,
                     quality: "360p",
                     dnt: true,
-                    loop: true
+                    loop: true,
+                    playsinline: true
                   }
                 }
               }}
