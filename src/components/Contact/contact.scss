@@ -106,22 +106,6 @@
 
   .arrow {
     display: none;
-  //   bottom: 25vh;
-  //   span {
-  //     margin-top: -15px;
-  //     display: block;
-  //     width: 23px;
-  //     height: 23px;
-  //     border-bottom: 1px solid white;
-  //     border-right: 1px solid white;
-  //     animation: buttonbounce 2.5s infinite;
-  //   }
-  //   span:nth-child(2) {
-  //     animation-delay: -0.1s;
-  //   }
-  //   span:nth-child(3) {
-  //     animation-delay: -0.2s;
-  //   }
   }
 
   .footer-container {
@@ -134,12 +118,13 @@
     padding-top: 25vh;
     color: white;
     h3 {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: "Roboto", sans-serif;
       font-style: italic;
     }
     span {
-      font-size: 1rem;
+      padding-left: 1rem;
+      font-size: 0.75rem;
       font-family: "Roboto", sans-serif;
       font-style: italic;
       font-weight: bold;
@@ -152,7 +137,7 @@
 
   .quote-container3 {
     padding-top: 40vh;
-    padding-bottom: 15%;
+    padding-bottom: 20vh;;
   }
 
   .quote1 {
@@ -164,12 +149,12 @@
   .quote2 {
     position: sticky;
     top: 45vh;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .quote3 {
-    position: relative;
-    top: 60%;
+    position: sticky;
+    top: 65vh;
     margin-left: 10%;
   }
 
@@ -187,7 +172,7 @@
   }
 
   .arrow {
-    bottom: 15vh;
+    bottom: 5vh;
   }
 
   .footer-container {
@@ -219,7 +204,7 @@
 
   .quote-container3 {
     padding-top: 40vh;
-    padding-bottom: 15%;
+    padding-bottom: 20vh;;
   }
 
   .quote1 {
@@ -235,8 +220,8 @@
   }
 
   .quote3 {
-    position: relative;
-    top: 60%;
+    position: sticky;
+    top: 65vh;
     margin-left: 10%;
   }
 

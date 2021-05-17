@@ -8,7 +8,7 @@ const Menu = ({ open, setOpen }) => {
 
       <motion.a href="#portfolio"
         whileHover={{ 
-        scale: 1.3,
+        scale: 1.1,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
@@ -19,18 +19,20 @@ const Menu = ({ open, setOpen }) => {
 
       <motion.a href="#studio"
         whileHover={{ 
-        scale: 1.3,
+        scale: 1.1,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
         transition={{ type: 'spring', stiffness: 100 }}
       >
         Studio
+        <p>(Coming soon!)</p>
       </motion.a>
+
 
       <motion.a href="#contact"
         whileHover={{ 
-        scale: 1.3,
+        scale: 1.1,
         originX: 0,
         textShadow: "0px 0px 2px rgb(255,255,255)"
         }}
