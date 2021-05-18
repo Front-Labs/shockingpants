@@ -105,6 +105,22 @@
 
   .arrow {
     display: none;
+    //   bottom: 25vh;
+    //   span {
+    //     margin-top: -15px;
+    //     display: block;
+    //     width: 23px;
+    //     height: 23px;
+    //     border-bottom: 1px solid white;
+    //     border-right: 1px solid white;
+    //     animation: buttonbounce 2.5s infinite;
+    //   }
+    //   span:nth-child(2) {
+    //     animation-delay: -0.1s;
+    //   }
+    //   span:nth-child(3) {
+    //     animation-delay: -0.2s;
+    //   }
   }
 
   .footer-container {
@@ -115,6 +131,7 @@
 @media screen and (max-width: 1280px) and (orientation: landscape) {
   .quote-container1 {
     padding-top: 25vh;
+    padding-bottom: 25vh;
     color: white;
     h3 {
       font-size: 1rem;
@@ -135,8 +152,7 @@
   }
 
   .quote-container3 {
-    padding-top: 40vh;
-    padding-bottom: 20vh;;
+    padding-top: 65vh;
   }
 
   .quote1 {
@@ -152,8 +168,6 @@
   }
 
   .quote3 {
-    position: sticky;
-    top: 65vh;
     margin-left: 10%;
   }
 
@@ -171,7 +185,7 @@
   }
 
   .arrow {
-    bottom: 5vh;
+    bottom: 15vh;
   }
 
   .footer-container {
@@ -182,6 +196,7 @@
 @media screen and (min-width: 1280px) {
   .quote-container1 {
     padding-top: 25vh;
+    padding-bottom: 25vh;
     color: white;
     h3 {
       font-size: 1.5rem;
@@ -202,8 +217,7 @@
   }
 
   .quote-container3 {
-    padding-top: 40vh;
-    padding-bottom: 20vh;;
+    padding-top: 65vh;
   }
 
   .quote1 {
@@ -219,11 +233,9 @@
   }
 
   .quote3 {
-    position: sticky;
-    top: 65vh;
     margin-left: 10%;
   }
-
+  
   .contact-container {
     right: 3.5rem;
     .contact-buttons {
