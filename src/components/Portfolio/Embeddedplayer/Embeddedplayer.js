@@ -11,10 +11,18 @@ const EmbeddedPlayer = () => {
 
   return (
     <section id="embedded-player">
-      <div className="studio-logo">
-        <img src="images/Post-Mark-Black.png" alt="logo" />
-        <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image" />
-        <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image-alternate" />
+
+      <div className="wrapper">
+        <div className="studio-logo">
+          <img src="images/Post-Mark-Black.png" alt="logo" />
+          <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image" />
+          <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image-alternate" />
+        </div>
+        <div className="page-indicator flicker-image-text">
+          <p>
+            studio
+          </p>
+        </div>
       </div>
       <a href="/#portfolio">
         <div className="times">

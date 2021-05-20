@@ -31,13 +31,20 @@ export default function Featured() {
   return (
     <section id='featured'>
 
+      <div className="wrapper">
         <div className="studio-logo">
           <img src="images/Post-Mark-Black.png" alt="logo" />
           <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image" />
           <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image-alternate" />
         </div>
+        <div className="page-indicator flicker-image-text">
+          <p>
+             studio
+          </p>
+        </div>
+      </div>
 
-    
+
       {featureData.map((video, index) => {
         let url = 'https://player.vimeo.com' + video.uri.replace('/videos/', '/video/')
         return (
