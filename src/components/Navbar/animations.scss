@@ -1,4 +1,4 @@
-@keyframes flicker-image-text {
+@keyframes flash-text {
     0% {
       opacity: 0.9;
     }
@@ -34,7 +34,7 @@
     }
   }
 
-  @keyframes flicker {
+  @keyframes flash {
     0% {
       opacity: 1;
     }

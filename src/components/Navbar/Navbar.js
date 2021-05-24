@@ -21,15 +21,15 @@ function Navbar() {
           <img
             src="images/Post-Mark-White.png"
             alt="logo"
-            className="flicker-image img-white"
+            className="flash img-white"
           />
           <img
             src="images/Post-Mark-White.png"
             alt="logo"
-            className="flicker-image-alternate img-white"
+            className="flash-alternate img-white"
           />
         </div>
-        <div className="page-indicator flicker-image-text">
+        <div className="page-indicator flash-text">
           {/* <p>{section}}</p> */}
         </div>
       </StyledWrapper>
