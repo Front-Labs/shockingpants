@@ -29,9 +29,9 @@ function Navbar() {
             className="flicker-image-alternate img-white"
           />
         </div>
-        <div className="page-indicator flicker-image-text">
+        {/* <div className="page-indicator flicker-image-text">
           <p>studio</p>
-        </div>
+        </div> */}
       </StyledWrapper>
 
       <div id="menu">
