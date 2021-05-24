@@ -1,31 +1,44 @@
-import { useLocation } from "react-router-dom"
-import './embeddedplayer.scss'
+import { useLocation } from "react-router-dom";
+import "./embeddedplayer.scss";
+import { StyledWrapper } from "../../Navbar/style";
 
 const EmbeddedPlayer = () => {
-  const location = useLocation()
-  let url = `https://player.vimeo.com${location.state.link}`
-  url = url.replace('/videos/', '/video/')
-  const title = location.state.title
-  let description = location.state.description
-  if (description === 'null') { description = '' }
+  const location = useLocation();
+  let url = `https://player.vimeo.com${location.state.link}`;
+  url = url.replace("/videos/", "/video/");
+  const title = location.state.title;
+  let description = location.state.description;
+  if (description === "null") {
+    description = "";
+  }
 
   return (
     <section id="embedded-player">
-
-      <div className="wrapper">
+      <StyledWrapper>
         <div className="studio-logo">
-          <img src="images/Post-Mark-Black.png" alt="logo" />
-          <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image" />
-          <img src="images/Post-Mark-White.png" alt="logo" className="flicker-image-alternate" />
+          <img
+            src="images/Post-Mark-Black.png"
+            alt="logo"
+            className="img-black"
+          />
+          <img
+            src="images/Post-Mark-White.png"
+            alt="logo"
+            className="flicker-image img-white"
+          />
+          <img
+            src="images/Post-Mark-White.png"
+            alt="logo"
+            className="flicker-image-alternate img-white"
+          />
         </div>
         <div className="page-indicator flicker-image-text">
-          <p>
-            studio
-          </p>
+          <p>studio</p>
         </div>
-      </div>
+      </StyledWrapper>
       <a href="/#portfolio">
         <div className="times">
+          Î
           <img src="images/times-circle-regular.svg" alt="times" />
         </div>
       </a>
@@ -45,6 +58,6 @@ const EmbeddedPlayer = () => {
       </div>
     </section>
   );
-}
+};
 
-export default EmbeddedPlayer
+export default EmbeddedPlayer;

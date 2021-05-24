@@ -6,7 +6,7 @@
   visibility: visible;
   position: absolute;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .MuiCircularProgress-root {
@@ -21,10 +21,7 @@
   width: 75%;
 }
 
-
-@media screen 
-and (max-width: 1280px)
-and (orientation: portrait) {
+@media screen and (max-width: 1280px) and (orientation: portrait) {
   .card.active {
     bottom: 14%;
     left: 10%;
@@ -36,9 +33,7 @@ and (orientation: portrait) {
   }
 }
 
-@media screen 
-and (max-width: 1280px)
-and (orientation: landscape) {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
   .card.active {
     left: 5%;
     bottom: 20%;
@@ -47,7 +42,7 @@ and (orientation: landscape) {
       font-size: 1.5rem;
       font-weight: 300;
     }
-  }  
+  }
 }
 
 @media screen and (min-width: 1280px) {
