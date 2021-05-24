@@ -11,7 +11,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .featured-item.active {
@@ -21,6 +21,10 @@
   @media screen and (max-width: 1280px) and (orientation: portrait) {
     #featured {
       height: 100vh;
+      .featured-item.active {
+        visibility: visible;
+        overscroll-behavior-x: none;
+      }
     }
   }
 

@@ -3,14 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
 }
 
@@ -20,29 +20,23 @@
   visibility: visible;
 }
 
-.contact-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding-top: 0;
-  .contact-buttons {
-    display: flex;
-    position: sticky;
+.contact-buttons {
+  display: flex;
+  position: sticky;
 
-    li {
-      float: left;
-      margin-right: 30px;
-      list-style-type: none;
-      a img {
-        opacity: 0.75;
-        display: block;
-        border: none;
-        filter: invert(1);
-      }
-      a img:hover {
-        opacity: 1;
-        transition: 400ms ease-in-out;
-      }
+  li {
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+    a img {
+      opacity: 0.75;
+      display: block;
+      border: none;
+      filter: invert(1);
+    }
+    a img:hover {
+      opacity: 1;
+      transition: 400ms ease-in-out;
     }
   }
 }
@@ -85,8 +79,6 @@
 
 @media screen and (max-width: 1280px) and (orientation: portrait) {
   #contact {
-    background-position: center;
-    background-size: cover;
     background-attachment: scroll;
     height: 100vh;
   }
@@ -114,6 +106,10 @@
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
+  #contact {
+    background-attachment: fixed;
+  }
+
   .quote-container1 {
     padding-top: 25vh;
     padding-bottom: 25vh;
@@ -156,16 +152,13 @@
     margin-left: 10%;
   }
 
-  .contact-container {
-    right: 3.5rem;
-    .contact-buttons {
-      top: 70vh;
-      justify-content: flex-end;
-      li a img {
-        width: 40px;
-        height: 40px;
-        opacity: 0.75;
-      }
+  .contact-buttons {
+    top: 70vh;
+    justify-content: flex-end;
+    li a img {
+      width: 40px;
+      height: 40px;
+      opacity: 0.75;
     }
   }
 
@@ -179,6 +172,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  #contact {
+    background-attachment: fixed;
+  }
+
   .quote-container1 {
     padding-top: 25vh;
     padding-bottom: 25vh;
@@ -220,16 +217,13 @@
   .quote3 {
     margin-left: 10%;
   }
-  
-  .contact-container {
-    right: 3.5rem;
-    .contact-buttons {
-      top: 87vh;
-      justify-content: flex-end;
-      li a img {
-        width: 40px;
-        height: 40px;
-      }
+
+  .contact-buttons {
+    top: 87vh;
+    justify-content: flex-end;
+    li a img {
+      width: 40px;
+      height: 40px;
     }
   }
 

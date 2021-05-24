@@ -15,7 +15,6 @@ const Contact = () => {
   }
   return (
     <section id="contact" style={options}>
-      <div className="contact-container">
         <div className="contact-buttons">
           <ul>
             <li>
@@ -35,7 +34,6 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-      </div>
       <a href="#featured">
         <div className="arrow">
           <span></span>
