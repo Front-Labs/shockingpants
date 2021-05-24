@@ -29,6 +29,7 @@ function Navbar() {
             className="flash-alternate img-white"
           />
         </div>
+
         <div className="page-indicator flash-text">
           {/* <p>{section}}</p> */}
         </div>
