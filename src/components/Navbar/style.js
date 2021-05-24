@@ -33,16 +33,16 @@ export const StyledWrapper = styled.div`
     }
   }
 
-  .flicker-image {
-    animation: flicker 1100ms alternate infinite;
+  .flash {
+    animation: flash 1100ms alternate infinite;
   }
 
-  .flicker-image-alternate {
-    animation: flicker 1000ms alternate infinite;
+  .flash-alternate {
+    animation: flash 1000ms alternate infinite;
   }
 
-  .flicker-image-text {
-    animation: flicker-image-text 1500ms alternate infinite;
+  .flash-text {
+    animation: flash-text 1500ms alternate infinite;
   }
 
   @media screen and (max-width: 1280px) and (orientation: portrait) {
