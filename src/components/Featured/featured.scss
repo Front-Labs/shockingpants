@@ -6,7 +6,6 @@
   .featured-item {
     visibility: hidden;
     position: absolute;
-    width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -19,11 +18,11 @@
   @media screen and (max-width: 1280px) and (orientation: portrait) {
     #featured {
       height: 100vh;
+    }
       .featured-item.active {
         height: 200%;
         width: 200%;
       }
-    }
   }
 
   @media screen and (max-width: 1280px) and (orientation: landscape) {
