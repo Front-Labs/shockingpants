@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-export default function Observer({ position, quote, description }) {
+export default function ContactObserver({ position, quote, description }) {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
   const isMobilePortrait = useMediaQuery({ maxWidth: 1280, orientation: "portrait" });

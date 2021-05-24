@@ -1,4 +1,4 @@
-import Observer from './Observer'
+import ContactObserver from './ContactObserver'
 import './contact.scss'
 import { useMediaQuery } from 'react-responsive';
 
@@ -45,19 +45,19 @@ const Contact = () => {
       </a>
 
       <div className="quote-container1">
-        <Observer
+        <ContactObserver
           position="quote1"
           quote='"Who you gonna call? Pitchbusters!"'
           description='Winning pitches since he was in his diapers.'
         />
         <div className="quote-container2">
-          <Observer
+          <ContactObserver
             position="quote2"
             quote='"Dad of two aliens"'
             description="Mark knew about UFO's even before the Pentagon!"
           />
           <div className="quote-container3">
-            <Observer
+            <ContactObserver
               position="quote3"
               quote='"Rythm is a dancer!"'
               description="It's a soul's companion. You can feel it everywhere. Especially in Mark's edits."

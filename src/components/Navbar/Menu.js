@@ -1,4 +1,3 @@
-import { bool } from 'prop-types';
 import { StyledMenu } from './style';
 import { motion } from 'framer-motion';
 
@@ -42,10 +41,6 @@ const Menu = ({ open, setOpen }) => {
       </motion.a>
     </StyledMenu>
   )
-}
-
-Menu.propTypes = {
-  open: bool.isRequired,
 }
 
 export default Menu;
