@@ -30,7 +30,7 @@ function Navbar() {
           />
         </div>
         <div className="page-indicator flicker-image-text">
-          <p>studio</p>
+          {/* <p>{section}}</p> */}
         </div>
       </StyledWrapper>
 
