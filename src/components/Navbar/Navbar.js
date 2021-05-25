@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import Burger from "./Burger.js";
 import Menu from "./Menu.js";
-import './animations.scss'
+import "./animations.scss";
 import { StyledWrapper } from "./style.js";
-import ClickToClose from './ClickToClose';
+import ClickToClose from "./ClickToClose";
 
 function Navbar() {
   const ref = useRef();
