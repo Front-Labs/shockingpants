@@ -85,6 +85,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 2;
+  overscroll-behavior-x: none;
 
   &:focus {
     outline: none;

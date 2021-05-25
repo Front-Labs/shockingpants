@@ -55,7 +55,7 @@ export default function Featured() {
                 vimeo: {
                   playerOptions: {
                     background: true,
-                    quality: "360p",
+                    quality: "720p",
                     dnt: true,
                     loop: true,
                     playsinline: true,
