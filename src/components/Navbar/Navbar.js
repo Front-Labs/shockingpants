@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import Burger from "./Burger.js";
 import Menu from "./Menu.js";
-import './animations.scss'
-import { StyledWrapper } from "./style.js";
-import ClickToClose from './ClickToClose';
+import "./animations.scss";
+import { GlobalStyles, StyledWrapper } from "./style.js";
+import ClickToClose from "./ClickToClose";
 
 function Navbar() {
   const ref = useRef();
@@ -34,7 +34,7 @@ function Navbar() {
           {/* <p>{section}}</p> */}
         </div>
       </StyledWrapper>
-
+      <GlobalStyles />
       <div id="menu">
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

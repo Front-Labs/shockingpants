@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./featured.scss";
 import Card from "./Cards/Card";
 import ReactPlayer from "react-player/vimeo";
-import { useMediaQuery } from "react-responsive";
 
 export default function Featured() {
   const [current, setCurrent] = useState(0);
@@ -31,12 +30,6 @@ export default function Featured() {
     return () => clearInterval(interval);
   });
 
-  let width = '100%'
-  const isMobilePortrait = useMediaQuery({ maxWidth: 1280, orientation: "portrait" });
-  if (isMobilePortrait) {
-    width = '100%'
-  }
-
   return (
     <section id="featured">
       {featureData.map((video, index) => {
@@ -48,7 +41,7 @@ export default function Featured() {
             className={`featured-item ${index === current ? "active" : ""}`}
           >
             <ReactPlayer
-              width={width}
+              width='100%'
               height='100%'
               url={url}
               config={{
