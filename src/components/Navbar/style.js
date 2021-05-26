@@ -104,6 +104,11 @@ export const StyledBurger = styled.button`
   z-index: 2;
   overscroll-behavior-x: none;
 
+  &:hover {
+    opacity: 1;
+    transition: 400ms ease-in-out;
+  }
+
   &:focus {
     outline: none;
   }
