@@ -8,8 +8,10 @@
     top: 0;
     height: 100vh;
     img {
+      position: absolute;
       height: 100%;
-      width: 100%;
+      width: 50%;
+      right: 0;
       object-fit: cover;
     }
   }
@@ -90,6 +92,11 @@
 @media screen and (max-width: 1280px) and (orientation: portrait) {
   #contact {
     height: 100vh;
+    .contact-img {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .quote-container1 {
