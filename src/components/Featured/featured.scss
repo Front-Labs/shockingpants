@@ -9,7 +9,6 @@
   position: absolute;
   height: 100%;
   left: 50%;
-  top: 40%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
@@ -22,22 +21,22 @@
   #featured {
     height: 100vh;
     .featured-item {
+      top: 55%;
       width: 200%;
-    }
-    .featured-item.active {
-      visibility: visible;
     }
   }
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
   .featured-item {
-    width: 100%;
+    top: 40%;
+    width: 250%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .featured-item {
     width: 100%;
+    top: 40%;
   }
 }
