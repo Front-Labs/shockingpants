@@ -21,8 +21,7 @@
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 600ms ease-out,
-    visibility 1200ms ease-out;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out, visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
 }
 
@@ -33,8 +32,8 @@
 }
 
 .contact-buttons {
-  display: flex;
   position: sticky;
+  display: flex;
 
   li {
     float: left;
@@ -49,6 +48,7 @@
     a img:hover {
       opacity: 1;
       transition: 400ms ease-in-out;
+      filter: invert(1);
     }
   }
 }
