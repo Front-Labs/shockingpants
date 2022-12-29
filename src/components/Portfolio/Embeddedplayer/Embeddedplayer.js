@@ -38,7 +38,6 @@ const EmbeddedPlayer = () => {
       </StyledWrapper>
       <a href="/#portfolio">
         <div className="times">
-          Î
           <img src="images/times-circle-regular.svg" alt="times" />
         </div>
       </a>

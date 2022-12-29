@@ -3,6 +3,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  .contact-img {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    img {
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      right: 0;
+      object-fit: cover;
+    }
+  }
 }
 
 .fade-in-section {
@@ -79,8 +91,12 @@
 
 @media screen and (max-width: 1280px) and (orientation: portrait) {
   #contact {
-    background-attachment: scroll;
     height: 100vh;
+    .contact-img {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .quote-container1 {
@@ -88,8 +104,10 @@
   }
 
   .contact-buttons {
+    position: absolute;
     justify-content: center;
-    top: 80vh;
+    width: 100%;
+    bottom: 10vh;
     li a img {
       width: 42px;
       height: 42px;
@@ -107,136 +125,133 @@
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
   #contact {
-    background-attachment: fixed;
-  }
-
-  .quote-container1 {
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-    color: white;
-    h3 {
-      font-size: 1rem;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
+    .quote-container1 {
+      padding-top: 25vh;
+      padding-bottom: 25vh;
+      color: white;
+      h3 {
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+      }
+      span {
+        padding-left: 1rem;
+        font-size: 0.75rem;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+      }
     }
-    span {
-      padding-left: 1rem;
-      font-size: 0.75rem;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
-      font-weight: bold;
+
+    .quote-container2 {
+      padding-top: 40vh;
     }
-  }
 
-  .quote-container2 {
-    padding-top: 40vh;
-  }
-
-  .quote-container3 {
-    padding-top: 65vh;
-  }
-
-  .quote1 {
-    position: sticky;
-    top: 25vh;
-    margin-left: 10%;
-  }
-
-  .quote2 {
-    position: sticky;
-    top: 45vh;
-    margin-left: 15%;
-  }
-
-  .quote3 {
-    margin-left: 10%;
-  }
-
-  .contact-buttons {
-    top: 70vh;
-    justify-content: flex-end;
-    li a img {
-      width: 40px;
-      height: 40px;
-      opacity: 0.75;
+    .quote-container3 {
+      padding-top: 65vh;
     }
-  }
 
-  .arrow {
-    bottom: 15vh;
-  }
+    .quote1 {
+      position: sticky;
+      top: 25vh;
+      margin-left: 10%;
+    }
 
-  .footer-container {
-    display: none;
+    .quote2 {
+      position: sticky;
+      top: 45vh;
+      margin-left: 15%;
+    }
+
+    .quote3 {
+      margin-left: 10%;
+    }
+
+    .contact-buttons {
+      top: 80vh;
+      justify-content: flex-end;
+      padding-right: 4rem;
+      li a img {
+        width: 40px;
+        height: 40px;
+        opacity: 0.75;
+      }
+    }
+
+    .arrow {
+      bottom: 15vh;
+    }
+
+    .footer-container {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   #contact {
-    background-attachment: fixed;
-  }
-
-  .quote-container1 {
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-    color: white;
-    h3 {
-      font-size: 1.5rem;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
+    .quote-container1 {
+      padding-top: 25vh;
+      padding-bottom: 25vh;
+      color: white;
+      h3 {
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+      }
+      span {
+        padding-left: 1rem;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-weight: bold;
+      }
     }
-    span {
-      padding-left: 1rem;
-      font-size: 1rem;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
-      font-weight: bold;
+
+    .quote-container2 {
+      padding-top: 40vh;
     }
-  }
 
-  .quote-container2 {
-    padding-top: 40vh;
-  }
-
-  .quote-container3 {
-    padding-top: 65vh;
-  }
-
-  .quote1 {
-    position: sticky;
-    top: 25vh;
-    margin-left: 10%;
-  }
-
-  .quote2 {
-    position: sticky;
-    top: 45vh;
-    margin-left: 15%;
-  }
-
-  .quote3 {
-    margin-left: 10%;
-  }
-
-  .contact-buttons {
-    top: 87vh;
-    justify-content: flex-end;
-    li a img {
-      width: 40px;
-      height: 40px;
+    .quote-container3 {
+      padding-top: 65vh;
     }
-  }
 
-  .arrow {
-    bottom: 8vh;
-  }
+    .quote1 {
+      position: sticky;
+      top: 25vh;
+      margin-left: 10%;
+    }
 
-  .footer-container {
-    position: absolute;
-    left: 3%;
-    bottom: 5vh;
-    color: white;
-    font-size: 17px;
-    font-weight: 200;
+    .quote2 {
+      position: sticky;
+      top: 45vh;
+      margin-left: 15%;
+    }
+
+    .quote3 {
+      margin-left: 10%;
+    }
+
+    .contact-buttons {
+      top: 87vh;
+      justify-content: flex-end;
+      li a img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .arrow {
+      bottom: 8vh;
+    }
+
+    .footer-container {
+      position: absolute;
+      left: 3%;
+      bottom: 5vh;
+      color: white;
+      font-size: 17px;
+      font-weight: 200;
+    }
   }
 }
