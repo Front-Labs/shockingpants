@@ -9,11 +9,11 @@ const app = express()
 app.use(cors())
 
 let Vimeo = require('vimeo').Vimeo;
-  let client = new Vimeo(
-    process.env.CLIENT_ID,
-    process.env.CLIENT_SECRET,
-    process.env.ACCESS_TOKEN
-  );
+let client = new Vimeo(
+  process.env.CLIENT_ID,
+  process.env.CLIENT_SECRET,
+  process.env.ACCESS_TOKEN
+);
 
 //Featured Endpoint
 app.get("/featured", (req, res) => {

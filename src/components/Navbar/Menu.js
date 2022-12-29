@@ -28,7 +28,6 @@ const Menu = ({ open, setOpen }) => {
         <p>(Coming Soon)</p>
       </motion.a>
 
-
       <motion.a href="#contact"
         whileHover={{ 
         scale: 1.1,

@@ -12,10 +12,10 @@ export default function Featured() {
     fetch("https://www.postmark.nl/featured")
       .then((response) => response.json())
       .then((featureData) => {
-        setFeatureData(featureData);
+        setFeatureData(featureData)
       })
       .catch((error) => {
-        console.log(error.message);
+        console.log(error.message)
       });
     return [];
   }, []);
