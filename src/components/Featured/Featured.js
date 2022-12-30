@@ -10,6 +10,7 @@ export default function Featured() {
 
   useEffect(() => {
     fetch("https://www.postmark.nl/featured")
+    // fetch("http://localhost:3001/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData)
