@@ -1,3 +1,5 @@
+Shocking Pants NodeJS/Express/React
+
 in project directory, run:
 
 `yarn install`
